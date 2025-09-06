@@ -33,8 +33,8 @@ const Navigation = () => {
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
           <div className="flex items-center">
-            <h1 className="text-2xl font-bold text-primary">
-              BadmintonPro
+            <h1 className="text-2xl font-bold bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
+              RJ Badminton
             </h1>
           </div>
 
@@ -57,6 +57,18 @@ const Navigation = () => {
               className="text-foreground hover:text-primary transition-colors duration-200"
             >
               Programs
+            </button>
+            <button 
+              onClick={() => scrollToSection('testimonials')}
+              className="text-foreground hover:text-primary transition-colors duration-200"
+            >
+              Testimonials
+            </button>
+            <button 
+              onClick={() => scrollToSection('gallery')}
+              className="text-foreground hover:text-primary transition-colors duration-200"
+            >
+              Gallery
             </button>
             <button 
               onClick={() => scrollToSection('contact')}

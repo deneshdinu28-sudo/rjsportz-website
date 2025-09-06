@@ -19,7 +19,7 @@ const Contact = () => {
     {
       icon: Mail,
       title: "Email",
-      details: ["coach@badmintonpro.com", "Quick response guaranteed"]
+      details: ["coach@rjbadminton.com", "Quick response guaranteed"]
     },
     {
       icon: Clock,
