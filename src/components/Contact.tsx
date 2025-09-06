@@ -7,11 +7,6 @@ import { MapPin, Phone, Mail, Clock } from "lucide-react";
 const Contact = () => {
   const contactInfo = [
     {
-      icon: MapPin,
-      title: "Location",
-      details: ["Sports Complex Arena", "123 Champion Drive", "Metro City, MC 12345"]
-    },
-    {
       icon: Phone,
       title: "Phone",
       details: ["+1 (555) 123-4567", "Available 9 AM - 8 PM"]
@@ -37,8 +32,8 @@ const Contact = () => {
             <span className="block text-primary">Touch</span>
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Ready to start your badminton journey? Contact me to discuss your goals 
-            and find the perfect training program for you.
+            Ready to start your fitness journey? We offer badminton, yoga, and fitness training 
+            directly at your apartment. Contact us to discuss your goals and find the perfect program.
           </p>
         </div>
 

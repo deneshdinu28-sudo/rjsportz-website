@@ -1,36 +1,50 @@
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { Users, Target, Trophy, Clock } from "lucide-react";
+import { Users, Target, Trophy, Clock, Heart, Dumbbell } from "lucide-react";
 
 const Services = () => {
   const services = [
     {
-      icon: Users,
-      title: "Group Training",
-      description: "Join dynamic group sessions with players of similar skill levels. Build community while improving your game.",
-      features: ["Max 6 players per session", "2x per week", "Skill-matched groups"],
-      price: "$80/month"
+      icon: Target,
+      title: "Badminton Training",
+      description: "Professional badminton coaching at your apartment or our facility. We bring the expertise to your doorstep.",
+      features: ["At-home training available", "Professional equipment", "All skill levels"],
+      price: "$100/session"
     },
     {
-      icon: Target,
-      title: "Private Coaching",
-      description: "One-on-one personalized training focused on your specific goals and technique improvements.",
-      features: ["Customized training plan", "Video analysis", "Flexible scheduling"],
-      price: "$120/session"
+      icon: Heart,
+      title: "Yoga Classes",
+      description: "Enhance flexibility, balance, and mental wellness through personalized yoga sessions.",
+      features: ["Hatha & Vinyasa styles", "Stress relief focus", "Beginner friendly"],
+      price: "$60/session"
+    },
+    {
+      icon: Dumbbell,
+      title: "Fitness Training",
+      description: "Complete fitness programs combining strength training, cardio, and functional movements.",
+      features: ["Custom workout plans", "Nutritional guidance", "Progress tracking"],
+      price: "$80/session"
+    },
+    {
+      icon: Users,
+      title: "Group Programs",
+      description: "Join our dynamic group sessions for badminton, yoga, or fitness training with like-minded individuals.",
+      features: ["Small group sizes", "Community building", "Cost-effective"],
+      price: "$50/session"
     },
     {
       icon: Trophy,
       title: "Competition Prep",
-      description: "Intensive training program designed for players preparing for tournaments and competitions.",
-      features: ["Match strategy", "Mental preparation", "Performance analysis"],
-      price: "$200/month"
+      description: "Specialized training for athletes preparing for badminton tournaments and competitions.",
+      features: ["Advanced techniques", "Mental preparation", "Performance analysis"],
+      price: "$150/session"
     },
     {
       icon: Clock,
       title: "Intensive Camps",
-      description: "Weekend intensive training camps for rapid skill development and technique refinement.",
-      features: ["Full weekend sessions", "Multiple skill focus", "Small group setting"],
-      price: "$350/weekend"
+      description: "Weekend intensive programs covering badminton, fitness, and wellness for rapid improvement.",
+      features: ["Multi-discipline training", "Expert guidance", "Comprehensive program"],
+      price: "$400/weekend"
     }
   ];
 

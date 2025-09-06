@@ -1,4 +1,6 @@
 import { Card } from "@/components/ui/card";
+import { Button } from "@/components/ui/button";
+import { Link } from "react-router-dom";
 import coachingImage from "@/assets/coaching-session.jpg";
 
 const About = () => {
@@ -39,10 +41,16 @@ const About = () => {
               techniques to advanced players preparing for competitions.
             </p>
             
-            <p className="text-lg text-muted-foreground mb-8 leading-relaxed">
-              My coaching philosophy focuses on building strong fundamentals, developing mental 
-              toughness, and creating personalized training programs that maximize each player's potential.
+            <p className="text-lg text-muted-foreground mb-6 leading-relaxed">
+              Our philosophy at RJ Academy focuses on holistic development through badminton, yoga, 
+              and fitness training. We bring professional coaching directly to your apartment.
             </p>
+            
+            <Link to="/about">
+              <Button variant="outline" size="lg" className="mb-8">
+                Know More
+              </Button>
+            </Link>
             
             {/* Achievements Grid */}
             <div className="grid grid-cols-2 md:grid-cols-4 gap-4">

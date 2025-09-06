@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
+import { Link } from "react-router-dom";
 import { Menu, X } from "lucide-react";
 
 const Navigation = () => {
@@ -34,7 +35,7 @@ const Navigation = () => {
           {/* Logo */}
           <div className="flex items-center">
             <h1 className="text-2xl font-bold bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
-              RJ Badminton
+              RJ Academy
             </h1>
           </div>
 
@@ -46,12 +47,12 @@ const Navigation = () => {
             >
               Home
             </button>
-            <button 
-              onClick={() => scrollToSection('about')}
+            <Link 
+              to="/about"
               className="text-foreground hover:text-primary transition-colors duration-200"
             >
               About
-            </button>
+            </Link>
             <button 
               onClick={() => scrollToSection('services')}
               className="text-foreground hover:text-primary transition-colors duration-200"
@@ -105,12 +106,12 @@ const Navigation = () => {
               >
                 Home
               </button>
-              <button
-                onClick={() => scrollToSection('about')}
+              <Link
+                to="/about"
                 className="block w-full text-left px-3 py-2 text-foreground hover:text-primary hover:bg-secondary rounded-md transition-colors"
               >
                 About
-              </button>
+              </Link>
               <button
                 onClick={() => scrollToSection('services')}
                 className="block w-full text-left px-3 py-2 text-foreground hover:text-primary hover:bg-secondary rounded-md transition-colors"
