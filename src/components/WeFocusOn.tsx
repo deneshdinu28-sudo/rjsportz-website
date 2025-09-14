@@ -1,25 +1,29 @@
 import { Card, CardContent } from "@/components/ui/card";
+import heroBadminton from "@/assets/hero-badminton.jpg";
+import coachingSession from "@/assets/coaching-session.jpg";
+import trainingSession from "@/assets/training-session-1.jpg";
+import groupTraining from "@/assets/group-training.jpg";
 
 const WeFocusOn = () => {
   const activities = [
     {
       title: "Badminton",
-      image: "/src/assets/hero-badminton.jpg",
+      image: heroBadminton,
       description: "Professional badminton coaching with expert techniques and strategies"
     },
     {
       title: "Yoga",
-      image: "/src/assets/coaching-session.jpg", 
+      image: coachingSession, 
       description: "Enhance flexibility, balance, and mental wellness through yoga"
     },
     {
       title: "Fitness",
-      image: "/src/assets/training-session-1.jpg",
+      image: trainingSession,
       description: "Complete fitness programs for strength and conditioning"
     },
     {
       title: "Table Tennis",
-      image: "/src/assets/group-training.jpg",
+      image: groupTraining,
       description: "Master the art of table tennis with professional guidance"
     }
   ];
