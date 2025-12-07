@@ -1,30 +1,36 @@
 import { Card, CardContent } from "@/components/ui/card";
-import heroBadminton from "@/assets/hero-badminton.jpg";
-import coachingSession from "@/assets/coaching-session.jpg";
-import trainingSession from "@/assets/training-session-1.jpg";
-import groupTraining from "@/assets/group-training.jpg";
 
 const WeFocusOn = () => {
   const activities = [
     {
       title: "Badminton",
-      image: heroBadminton,
+      image: "https://images.unsplash.com/photo-1626224583764-f87db24ac4ea?w=800",
       description: "Professional badminton coaching with expert techniques and strategies"
     },
     {
       title: "Yoga",
-      image: coachingSession, 
+      image: "https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?w=800", 
       description: "Enhance flexibility, balance, and mental wellness through yoga"
     },
     {
       title: "Fitness",
-      image: trainingSession,
+      image: "https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=800",
       description: "Complete fitness programs for strength and conditioning"
     },
     {
       title: "Table Tennis",
-      image: groupTraining,
+      image: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800",
       description: "Master the art of table tennis with professional guidance"
+    },
+    {
+      title: "Swimming",
+      image: "https://images.unsplash.com/photo-1530549387789-4c1017266635?w=800",
+      description: "Learn swimming techniques from beginner to advanced levels"
+    },
+    {
+      title: "Karate",
+      image: "https://images.unsplash.com/photo-1555597673-b21d5c935865?w=800",
+      description: "Traditional martial arts training for discipline and self-defense"
     }
   ];
 
@@ -33,15 +39,14 @@ const WeFocusOn = () => {
       <div className="container mx-auto px-6">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold mb-6 text-foreground">
-            We Focus
-            <span className="block text-primary">On</span>
+            We Focus <span className="text-primary">On</span>
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
             Discover our specialized training programs designed to help you excel in your favorite sports and fitness activities.
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           {activities.map((activity, index) => (
             <Card key={index} className="group hover:shadow-xl transition-all duration-300 hover:-translate-y-2 overflow-hidden">
               <div className="relative h-48 overflow-hidden">
