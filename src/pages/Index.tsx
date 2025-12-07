@@ -41,14 +41,14 @@ const Index = () => {
           <div className="grid md:grid-cols-4 gap-8">
             <div className="md:col-span-2">
               <h3 className="text-2xl font-bold bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent mb-4">
-                RJ Academy
+                RJ Sports
               </h3>
               <p className="text-muted-foreground mb-6 max-w-md">
                 Bringing professional badminton, yoga, and fitness training directly to your doorstep. 
                 Transform your fitness journey with our expert coaches.
               </p>
               <div className="text-sm text-muted-foreground">
-                © 2024 RJ Academy. All rights reserved.
+                © 2024 RJ Sports. All rights reserved.
               </div>
             </div>
             

@@ -39,8 +39,7 @@ const TrainingSessions = () => {
       <div className="container mx-auto px-6">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold mb-6 text-foreground">
-            Training
-            <span className="block text-primary">Sessions</span>
+            Training <span className="text-primary">Sessions</span>
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
             Choose from our comprehensive training programs designed to elevate your skills,

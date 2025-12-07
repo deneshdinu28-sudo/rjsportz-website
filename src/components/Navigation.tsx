@@ -35,7 +35,7 @@ const Navigation = () => {
           {/* Logo */}
           <div className="flex items-center">
             <h1 className="text-2xl font-bold bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
-              RJ Academy
+              RJ Sports
             </h1>
           </div>
 

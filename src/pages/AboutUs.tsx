@@ -35,7 +35,7 @@ const AboutUs = () => {
     {
       icon: Trophy,
       title: "Our Goals",
-      description: "To train 1000+ students, develop champions, and establish RJ Academy as the premier choice for home-based sports and fitness training across the region."
+      description: "To train 1000+ students, develop champions, and establish RJ Sports as the premier choice for home-based sports and fitness training across the region."
     }
   ];
 
@@ -50,7 +50,7 @@ const AboutUs = () => {
               <span className="font-medium">Back to Home</span>
             </Link>
             <h1 className="text-2xl font-bold bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
-              RJ Academy
+              RJ Sports
             </h1>
           </div>
         </div>
@@ -62,12 +62,11 @@ const AboutUs = () => {
           {/* Hero Section */}
           <div className="text-center mb-16">
             <h1 className="text-4xl md:text-6xl font-bold mb-6 text-foreground">
-              About
-              <span className="block text-primary">RJ Academy</span>
+              About <span className="text-primary">RJ Sports</span>
             </h1>
             <p className="text-lg text-muted-foreground max-w-3xl mx-auto leading-relaxed">
               Founded with a vision to make professional sports training accessible to everyone, 
-              RJ Academy brings expert coaching in badminton, yoga, and fitness directly to your doorstep.
+              RJ Sports brings expert coaching in badminton, yoga, and fitness directly to your doorstep.
             </p>
           </div>
 
