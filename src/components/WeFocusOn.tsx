@@ -19,7 +19,7 @@ const WeFocusOn = () => {
     },
     {
       title: "Table Tennis",
-      image: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800",
+      image: "https://images.unsplash.com/photo-1609710228159-0fa9bd7c0827?w=800",
       description: "Master the art of table tennis with professional guidance"
     },
     {

@@ -2,9 +2,6 @@ import { useState } from "react";
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Play, Image as ImageIcon, Users, Award } from "lucide-react";
-import trainingSession1 from "@/assets/training-session-1.jpg";
-import groupTraining from "@/assets/group-training.jpg";
-import coachingSession from "@/assets/coaching-session.jpg";
 
 const Gallery = () => {
   const [activeTab, setActiveTab] = useState<'photos' | 'videos'>('photos');
@@ -12,70 +9,84 @@ const Gallery = () => {
   const photos = [
     {
       id: 1,
-      src: trainingSession1,
-      title: "One-on-One Training Session",
-      description: "Intensive coaching focusing on technique refinement"
+      src: "https://images.unsplash.com/photo-1626224583764-f87db24ac4ea?w=800",
+      title: "Badminton Training",
+      description: "Professional badminton coaching session"
     },
     {
       id: 2,
-      src: groupTraining,
-      title: "Group Training Session",
-      description: "Students practicing footwork drills together"
+      src: "https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?w=800",
+      title: "Yoga Session",
+      description: "Mindfulness and flexibility training"
     },
     {
       id: 3,
-      src: coachingSession,
-      title: "Advanced Coaching",
-      description: "Professional coaching session in action"
+      src: "https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=800",
+      title: "Fitness Training",
+      description: "Strength and conditioning workout"
     },
     {
       id: 4,
-      src: trainingSession1,
-      title: "Skills Development",
-      description: "Building fundamental badminton techniques"
+      src: "https://images.unsplash.com/photo-1609710228159-0fa9bd7c0827?w=800",
+      title: "Table Tennis Practice",
+      description: "Improving reflexes and precision"
     },
     {
       id: 5,
-      src: groupTraining,
-      title: "Team Practice",
-      description: "Group dynamics and team building exercises"
+      src: "https://images.unsplash.com/photo-1530549387789-4c1017266635?w=800",
+      title: "Swimming Lessons",
+      description: "Learning proper swimming techniques"
     },
     {
       id: 6,
-      src: coachingSession,
-      title: "Competition Prep",
-      description: "Preparing students for tournaments"
+      src: "https://images.unsplash.com/photo-1555597673-b21d5c935865?w=800",
+      title: "Karate Training",
+      description: "Martial arts discipline and self-defense"
     }
   ];
 
   const videos = [
     {
       id: 1,
-      thumbnail: trainingSession1,
-      title: "Smash Technique Masterclass",
+      thumbnail: "https://images.unsplash.com/photo-1626224583764-f87db24ac4ea?w=800",
+      title: "Badminton Smash Masterclass",
       duration: "12:34",
       views: "2.5K"
     },
     {
       id: 2,
-      thumbnail: groupTraining,
-      title: "Footwork Fundamentals",
-      duration: "8:42",
-      views: "1.8K"
+      thumbnail: "https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?w=800",
+      title: "Morning Yoga Flow",
+      duration: "25:00",
+      views: "3.8K"
     },
     {
       id: 3,
-      thumbnail: coachingSession,
-      title: "Defensive Strategies",
-      duration: "15:20",
-      views: "3.2K"
+      thumbnail: "https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=800",
+      title: "Full Body Workout",
+      duration: "18:42",
+      views: "4.2K"
     },
     {
       id: 4,
-      thumbnail: trainingSession1,
-      title: "Service Techniques",
+      thumbnail: "https://images.unsplash.com/photo-1609710228159-0fa9bd7c0827?w=800",
+      title: "Table Tennis Spin Techniques",
       duration: "10:15",
-      views: "2.1K"
+      views: "1.9K"
+    },
+    {
+      id: 5,
+      thumbnail: "https://images.unsplash.com/photo-1530549387789-4c1017266635?w=800",
+      title: "Swimming Stroke Tutorial",
+      duration: "15:30",
+      views: "2.8K"
+    },
+    {
+      id: 6,
+      thumbnail: "https://images.unsplash.com/photo-1555597673-b21d5c935865?w=800",
+      title: "Karate Basics for Beginners",
+      duration: "20:45",
+      views: "3.1K"
     }
   ];
 
@@ -83,14 +94,11 @@ const Gallery = () => {
     <section className="py-20 bg-gradient-to-b from-secondary/30 to-background">
       <div className="container mx-auto px-6">
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold mb-6">
-            Training
-            <span className="block bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
-              Gallery
-            </span>
+          <h2 className="text-4xl md:text-5xl font-bold mb-6 text-foreground">
+            Training <span className="text-primary">Gallery</span>
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            See our students in action and watch their journey to badminton excellence
+            See our students in action across all our training programs
           </p>
         </div>
 
