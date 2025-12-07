@@ -3,8 +3,6 @@ import heroBadminton from "@/assets/hero-badminton.jpg";
 import coachingSession from "@/assets/coaching-session.jpg";
 import trainingSession from "@/assets/training-session-1.jpg";
 import groupTraining from "@/assets/group-training.jpg";
-import swimmingImage from "@/assets/swimming.jpg";
-import karateImage from "@/assets/karate.jpg";
 
 const WeFocusOn = () => {
   const activities = [
@@ -27,16 +25,6 @@ const WeFocusOn = () => {
       title: "Table Tennis",
       image: groupTraining,
       description: "Master the art of table tennis with professional guidance"
-    },
-    {
-      title: "Swimming",
-      image: swimmingImage,
-      description: "Learn swimming techniques from certified instructors for all skill levels"
-    },
-    {
-      title: "Karate",
-      image: karateImage,
-      description: "Traditional martial arts training for discipline, self-defense, and fitness"
     }
   ];
 
@@ -53,7 +41,7 @@ const WeFocusOn = () => {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
           {activities.map((activity, index) => (
             <Card key={index} className="group hover:shadow-xl transition-all duration-300 hover:-translate-y-2 overflow-hidden">
               <div className="relative h-48 overflow-hidden">

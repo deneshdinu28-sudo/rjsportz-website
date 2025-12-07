@@ -42,7 +42,7 @@ const About = () => {
             </p>
             
             <p className="text-lg text-muted-foreground mb-6 leading-relaxed">
-              Our philosophy at RJ Sports focuses on holistic development through badminton, yoga, 
+              Our philosophy at RJ Academy focuses on holistic development through badminton, yoga, 
               and fitness training. We bring professional coaching directly to your apartment.
             </p>
             
