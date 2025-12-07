@@ -9,17 +9,17 @@ const buttonVariants = cva(
   {
     variants: {
       variant: {
-        default: "bg-primary text-primary-foreground hover:bg-primary/90",
+        default: "bg-primary text-primary-foreground hover:bg-primary/90 hover:border-2 hover:border-primary transition-all duration-200",
         destructive:
-          "bg-destructive text-destructive-foreground hover:bg-destructive/90",
+          "bg-destructive text-destructive-foreground hover:bg-destructive/90 hover:border-2 hover:border-destructive transition-all duration-200",
         outline:
-          "border border-input bg-background hover:bg-accent hover:text-accent-foreground",
+          "border border-input bg-background hover:bg-accent hover:text-accent-foreground hover:border-2 hover:border-primary transition-all duration-200",
         secondary:
-          "bg-secondary text-secondary-foreground hover:bg-secondary/80",
-        ghost: "hover:bg-accent hover:text-accent-foreground",
+          "bg-secondary text-secondary-foreground hover:bg-secondary/80 hover:border-2 hover:border-primary transition-all duration-200",
+        ghost: "hover:bg-accent hover:text-accent-foreground hover:border-2 hover:border-primary transition-all duration-200",
         link: "text-primary underline-offset-4 hover:underline",
-        hero: "bg-gradient-to-r from-energy-orange to-champion-gold text-white hover:shadow-button transition-all duration-300 hover:scale-105",
-        "outline-hero": "border-2 border-white/70 text-white bg-white/10 backdrop-blur-sm hover:bg-white hover:text-primary transition-all duration-300",
+        hero: "bg-gradient-to-r from-primary to-court-green text-primary-foreground hover:shadow-button transition-all duration-300 hover:scale-105 hover:border-2 hover:border-primary",
+        "outline-hero": "border-2 border-white/70 text-white bg-white/10 backdrop-blur-sm hover:bg-white hover:text-primary hover:border-primary transition-all duration-300",
       },
       size: {
         default: "h-10 px-4 py-2",
