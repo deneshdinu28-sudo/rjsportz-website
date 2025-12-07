@@ -6,6 +6,7 @@ import TrainingSessions from "@/components/TrainingSessions";
 import Testimonials from "@/components/Testimonials";
 import Gallery from "@/components/Gallery";
 import Contact from "@/components/Contact";
+import Footer from "@/components/Footer";
 
 const Index = () => {
   return (
@@ -34,45 +35,7 @@ const Index = () => {
           <Contact />
         </section>
       </main>
-      
-      {/* Footer */}
-      <footer className="bg-card border-t border-border py-12">
-        <div className="container mx-auto px-6">
-          <div className="grid md:grid-cols-4 gap-8">
-            <div className="md:col-span-2">
-              <h3 className="text-2xl font-bold bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent mb-4">
-                RJ Sports
-              </h3>
-              <p className="text-muted-foreground mb-6 max-w-md">
-                Bringing professional badminton, yoga, and fitness training directly to your doorstep. 
-                Transform your fitness journey with our expert coaches.
-              </p>
-              <div className="text-sm text-muted-foreground">
-                © 2024 RJ Sports. All rights reserved.
-              </div>
-            </div>
-            
-            <div>
-              <h4 className="font-semibold text-foreground mb-4">Services</h4>
-              <ul className="space-y-2 text-sm text-muted-foreground">
-                <li>Badminton Training</li>
-                <li>Yoga Classes</li>
-                <li>Fitness Training</li>
-                <li>Group Programs</li>
-              </ul>
-            </div>
-            
-            <div>
-              <h4 className="font-semibold text-foreground mb-4">Contact</h4>
-              <ul className="space-y-2 text-sm text-muted-foreground">
-                <li>+1 (555) 123-4567</li>
-                <li>coach@rjacademy.com</li>
-                <li>At-home training available</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </footer>
+      <Footer />
     </div>
   );
 };
