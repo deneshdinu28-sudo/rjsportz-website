@@ -11,16 +11,18 @@ const Hero = () => {
       {/* Background Image */}
       <div className="absolute inset-0 z-0">
         <img 
-          src="https://images.unsplash.com/photo-1517649763962-0c623066013b?w=1920" 
+          src="https://images.unsplash.com/photo-1461896836934-bd45ba8fcab7?w=1920" 
           alt="Athletes training together" 
-          className="w-full h-full object-cover opacity-30"
+          className="w-full h-full object-cover opacity-25"
         />
-        <div className="absolute inset-0 bg-gradient-to-b from-background via-background/70 to-background"></div>
+        <div className="absolute inset-0 bg-gradient-to-b from-background/90 via-background/60 to-background"></div>
+        <div className="absolute inset-0 bg-gradient-to-r from-primary/10 via-transparent to-primary/5"></div>
       </div>
       
       {/* Neon glow effects */}
-      <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-primary/10 rounded-full blur-[120px]"></div>
+      <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-primary/8 rounded-full blur-[120px]"></div>
       <div className="absolute bottom-1/4 right-1/4 w-64 h-64 bg-primary/5 rounded-full blur-[100px]"></div>
+      <div className="absolute top-1/2 right-1/3 w-48 h-48 bg-primary/3 rounded-full blur-[80px]"></div>
       
       {/* Content */}
       <div className="relative z-10 container mx-auto px-6 text-center">
@@ -41,7 +43,7 @@ const Hero = () => {
           
           <h1 className="text-5xl md:text-7xl lg:text-8xl font-black mb-6 leading-[0.9] tracking-tight">
             <span className="text-foreground">Elevate Your</span>
-            <span className="block text-primary drop-shadow-[0_0_30px_hsl(105_98%_51%/0.5)]">
+            <span className="block text-primary drop-shadow-[0_0_30px_hsl(145_72%_40%/0.5)]">
               Game With Us
             </span>
           </h1>
