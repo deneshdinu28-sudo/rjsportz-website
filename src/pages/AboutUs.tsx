@@ -1,9 +1,11 @@
-import { Card, CardContent } from "@/components/ui/card";
+import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 import { ArrowLeft, Target, Eye, Trophy } from "lucide-react";
+import { motion } from "framer-motion";
 import founderImage from "@/assets/founder-ranjith.jpg";
 import coFounderImage from "@/assets/co-founder.jpg";
+import logo from "@/assets/logo.png";
 
 const AboutUs = () => {
   const staff = [
@@ -35,7 +37,7 @@ const AboutUs = () => {
     {
       icon: Trophy,
       title: "Our Goals",
-      description: "To train 1000+ students, develop champions, and establish RJ Sports as the premier choice for home-based sports and fitness training across the region."
+      description: "To train 1000+ students, develop champions, and establish RJ Sportz as the premier choice for home-based sports and fitness training across the region."
     }
   ];
 
@@ -49,9 +51,7 @@ const AboutUs = () => {
               <ArrowLeft className="w-5 h-5" />
               <span className="font-medium">Back to Home</span>
             </Link>
-            <h1 className="text-2xl font-bold bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
-              RJ Sports
-            </h1>
+            <img src={logo} alt="RJ Sportz" className="h-8" />
           </div>
         </div>
       </header>
@@ -59,14 +59,39 @@ const AboutUs = () => {
       <main className="py-20">
         <div className="container mx-auto px-6">
           
-          {/* Hero Section */}
-          <div className="text-center mb-16">
-            <h1 className="text-4xl md:text-6xl font-bold mb-6 text-foreground">
-              About <span className="text-primary">RJ Sports</span>
+          {/* Hero Section with 3D elements */}
+          <div className="text-center mb-16 relative overflow-hidden py-8">
+            {/* 3D geometric decorations */}
+            <motion.div 
+              className="absolute top-0 left-10 w-24 h-24 border-2 border-primary/15 rounded-lg"
+              animate={{ rotate: 360, y: [0, -15, 0] }}
+              transition={{ rotate: { duration: 20, repeat: Infinity, ease: "linear" }, y: { duration: 5, repeat: Infinity } }}
+              style={{ transformStyle: "preserve-3d", transform: "perspective(500px) rotateX(20deg) rotateY(15deg)" }}
+            />
+            <motion.div 
+              className="absolute top-10 right-16 w-20 h-20 border-2 border-primary/10"
+              animate={{ rotate: -360, scale: [1, 1.1, 1] }}
+              transition={{ rotate: { duration: 25, repeat: Infinity, ease: "linear" }, scale: { duration: 6, repeat: Infinity } }}
+              style={{ clipPath: "polygon(50% 0%, 0% 100%, 100% 100%)" }}
+            />
+            <motion.div 
+              className="absolute bottom-0 left-1/4 w-16 h-16 bg-primary/5 rounded-full border border-primary/15"
+              animate={{ y: [0, -20, 0] }}
+              transition={{ duration: 4, repeat: Infinity }}
+            />
+            <motion.div 
+              className="absolute bottom-5 right-1/4 w-14 h-14 border border-primary/10 rounded-lg"
+              animate={{ rotate: 180, y: [0, 10, 0] }}
+              transition={{ rotate: { duration: 15, repeat: Infinity, ease: "linear" }, y: { duration: 3, repeat: Infinity } }}
+              style={{ transformStyle: "preserve-3d", transform: "perspective(400px) rotateX(30deg)" }}
+            />
+
+            <h1 className="text-4xl md:text-6xl font-bold mb-6 text-foreground relative z-10">
+              About <span className="text-primary">RJ Sportz</span>
             </h1>
-            <p className="text-lg text-muted-foreground max-w-3xl mx-auto leading-relaxed">
+            <p className="text-lg text-muted-foreground max-w-3xl mx-auto leading-relaxed relative z-10">
               Founded with a vision to make professional sports training accessible to everyone, 
-              RJ Sports brings expert coaching in badminton, yoga, and fitness directly to your doorstep.
+              RJ Sportz brings expert coaching in badminton, yoga, and fitness directly to your doorstep.
             </p>
           </div>
 
@@ -81,7 +106,7 @@ const AboutUs = () => {
                 <div>
                   <img 
                     src={founderImage} 
-                    alt="Ranjith Kumar - Founder of RJ Academy"
+                    alt="Ranjith Kumar - Founder of RJ Sportz"
                     className="rounded-2xl shadow-lg w-full h-[400px] object-cover"
                   />
                 </div>
@@ -102,7 +127,7 @@ const AboutUs = () => {
                   <p className="text-lg text-muted-foreground leading-relaxed">
                     After achieving success at the state level and earning his BWF Level 3 certification, 
                     Ranjith realized his true calling was to make quality sports training accessible to everyone, 
-                    regardless of their location or circumstances. This vision led to the birth of RJ Academy.
+                    regardless of their location or circumstances. This vision led to the birth of RJ Sportz.
                   </p>
                   
                   <div className="bg-gradient-to-r from-primary/10 to-accent/10 p-6 rounded-xl">
@@ -132,11 +157,11 @@ const AboutUs = () => {
                       alt={member.name}
                       className="w-full h-[300px] object-cover"
                     />
-                    <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
-                    <div className="absolute bottom-0 left-0 right-0 p-6 text-white">
-                      <h3 className="text-xl font-bold mb-1">{member.name}</h3>
-                      <p className="text-white/90 font-medium mb-2">{member.occupation}</p>
-                      <p className="text-white/80 text-sm">{member.description}</p>
+                    <div className="absolute inset-0 bg-gradient-to-t from-background/80 to-transparent"></div>
+                    <div className="absolute bottom-0 left-0 right-0 p-6">
+                      <h3 className="text-xl font-bold mb-1 text-foreground">{member.name}</h3>
+                      <p className="text-primary font-medium mb-2">{member.occupation}</p>
+                      <p className="text-muted-foreground text-sm">{member.description}</p>
                     </div>
                   </div>
                 </Card>
