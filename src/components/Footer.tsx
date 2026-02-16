@@ -1,4 +1,5 @@
 import { Phone, Mail, Clock, Facebook, Instagram, Youtube, Linkedin } from "lucide-react";
+import logo from "@/assets/logo.png";
 
 const Footer = () => {
   const services = ["Badminton", "Yoga", "Karate", "Skating", "Swimming", "Table Tennis"];
@@ -9,9 +10,7 @@ const Footer = () => {
       <div className="container mx-auto px-6 py-16">
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-12">
           <div>
-            <h3 className="text-2xl font-black text-foreground mb-4">
-              RJ <span className="text-primary">Sports</span>
-            </h3>
+            <img src={logo} alt="RJ Sportz" className="h-10 mb-4" />
             <p className="text-muted-foreground mb-6">
               Professional multi-sport training delivered at your doorstep. Expert coaching in badminton, yoga, karate, skating, swimming, and table tennis.
             </p>
@@ -67,7 +66,7 @@ const Footer = () => {
 
         <div className="border-t border-border mt-12 pt-8 text-center">
           <p className="text-muted-foreground">
-            © {new Date().getFullYear()} RJ Sports. All rights reserved.
+            © {new Date().getFullYear()} RJ Sportz. All rights reserved.
           </p>
         </div>
       </div>

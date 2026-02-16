@@ -19,10 +19,45 @@ const Hero = () => {
         <div className="absolute inset-0 bg-gradient-to-r from-primary/10 via-transparent to-primary/5"></div>
       </div>
       
+      {/* 3D Geometric Elements */}
+      <motion.div 
+        className="absolute top-20 left-10 w-32 h-32 border-2 border-primary/20 rounded-lg"
+        animate={{ rotate: 360, y: [0, -20, 0] }}
+        transition={{ rotate: { duration: 20, repeat: Infinity, ease: "linear" }, y: { duration: 4, repeat: Infinity } }}
+        style={{ transformStyle: "preserve-3d", transform: "perspective(500px) rotateX(15deg) rotateY(15deg)" }}
+      />
+      <motion.div 
+        className="absolute top-40 right-20 w-24 h-24 border-2 border-primary/15"
+        animate={{ rotate: -360, scale: [1, 1.1, 1] }}
+        transition={{ rotate: { duration: 25, repeat: Infinity, ease: "linear" }, scale: { duration: 5, repeat: Infinity } }}
+        style={{ transformStyle: "preserve-3d", transform: "perspective(500px) rotateX(30deg) rotateY(-20deg)", clipPath: "polygon(50% 0%, 0% 100%, 100% 100%)" }}
+      />
+      <motion.div 
+        className="absolute bottom-40 left-20 w-20 h-20 bg-primary/5 border border-primary/20 rounded-full"
+        animate={{ y: [0, -30, 0], x: [0, 10, 0] }}
+        transition={{ duration: 6, repeat: Infinity }}
+      />
+      <motion.div 
+        className="absolute top-1/3 right-10 w-16 h-16 bg-primary/8 border border-primary/15"
+        animate={{ rotate: 180, y: [0, 15, 0] }}
+        transition={{ rotate: { duration: 15, repeat: Infinity, ease: "linear" }, y: { duration: 3, repeat: Infinity } }}
+        style={{ transformStyle: "preserve-3d", transform: "perspective(400px) rotateX(45deg)" }}
+      />
+      <motion.div 
+        className="absolute bottom-32 right-1/4 w-28 h-28 border border-primary/10 rounded-lg"
+        animate={{ rotate: -90, scale: [1, 0.9, 1] }}
+        transition={{ rotate: { duration: 18, repeat: Infinity, ease: "linear" }, scale: { duration: 7, repeat: Infinity } }}
+        style={{ transformStyle: "preserve-3d", transform: "perspective(600px) rotateX(20deg) rotateZ(10deg)" }}
+      />
+      <motion.div 
+        className="absolute top-1/2 left-1/3 w-12 h-12 bg-primary/5 rounded-full"
+        animate={{ y: [0, -15, 0], opacity: [0.3, 0.7, 0.3] }}
+        transition={{ duration: 4, repeat: Infinity }}
+      />
+
       {/* Neon glow effects */}
       <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-primary/8 rounded-full blur-[120px]"></div>
       <div className="absolute bottom-1/4 right-1/4 w-64 h-64 bg-primary/5 rounded-full blur-[100px]"></div>
-      <div className="absolute top-1/2 right-1/3 w-48 h-48 bg-primary/3 rounded-full blur-[80px]"></div>
       
       {/* Content */}
       <div className="relative z-10 container mx-auto px-6 text-center">
@@ -43,7 +78,7 @@ const Hero = () => {
           
           <h1 className="text-5xl md:text-7xl lg:text-8xl font-black mb-6 leading-[0.9] tracking-tight">
             <span className="text-foreground">Elevate Your</span>
-            <span className="block text-primary drop-shadow-[0_0_30px_hsl(145_72%_40%/0.5)]">
+            <span className="block text-primary drop-shadow-[0_0_30px_hsl(105_98%_51%/0.5)]">
               Game With Us
             </span>
           </h1>

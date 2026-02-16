@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
 import { Link, useNavigate } from "react-router-dom";
 import { Menu, X } from "lucide-react";
+import logo from "@/assets/logo.png";
 
 const Navigation = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -29,9 +30,7 @@ const Navigation = () => {
       <div className="container mx-auto px-6">
         <div className="flex items-center justify-between h-16">
           <Link to="/" className="flex items-center">
-            <h1 className="text-2xl font-black text-foreground">
-              RJ <span className="text-primary">Sports</span>
-            </h1>
+            <img src={logo} alt="RJ Sportz" className="h-10" />
           </Link>
 
           <div className="hidden md:flex items-center space-x-8">
@@ -39,7 +38,6 @@ const Navigation = () => {
             <Link to="/about" className="text-foreground hover:text-primary transition-colors">About</Link>
             <button onClick={() => scrollToSection('services')} className="text-foreground hover:text-primary transition-colors">Programs</button>
             <button onClick={() => scrollToSection('testimonials')} className="text-foreground hover:text-primary transition-colors">Testimonials</button>
-            <button onClick={() => scrollToSection('gallery')} className="text-foreground hover:text-primary transition-colors">Gallery</button>
             <button onClick={() => scrollToSection('contact')} className="text-foreground hover:text-primary transition-colors">Contact</button>
             <Button onClick={() => scrollToSection('contact')} variant="default">Book Session</Button>
           </div>
