@@ -21,8 +21,8 @@ const About = () => {
           {/* Image */}
           <div className="relative">
             <img 
-              src="https://images.unsplash.com/photo-1571019614242-c5c5dee9f50b?w=800" 
-              alt="Coach training students"
+              src="https://images.unsplash.com/photo-1461896836934-bd45ba8fcf9b?w=800" 
+              alt="Multi-sport training session"
               className="rounded-2xl w-full h-[500px] object-cover border border-border/50"
             />
             <div className="absolute -bottom-6 -right-6 bg-primary p-6 rounded-xl shadow-[0_0_30px_hsl(105_98%_51%/0.3)]">

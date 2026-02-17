@@ -27,7 +27,7 @@ const WeFocusOn = () => {
     {
       title: "Skating",
       slug: "skating",
-      image: "https://images.unsplash.com/photo-1564769662533-4f00a87b4056?w=800",
+      image: "https://images.unsplash.com/photo-1615213253710-55b38f3db81e?w=800",
       description: "Learn roller skating from basics to advanced tricks with expert coaches"
     },
     {
