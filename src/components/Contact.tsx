@@ -2,13 +2,14 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
-import { Phone, Mail, Clock } from "lucide-react";
+import { Phone, Mail, Clock, MapPin } from "lucide-react";
 import { useScrollAnimation } from "@/hooks/useScrollAnimation";
 
 const Contact = () => {
   const { ref, isVisible } = useScrollAnimation();
 
   const contactInfo = [
+    { icon: MapPin, title: "Location", details: ["Bengaluru, Karnataka", "Training at your preferred venue"] },
     { icon: Phone, title: "Phone", details: ["+1 (555) 123-4567", "Available 9 AM - 8 PM"] },
     { icon: Mail, title: "Email", details: ["contact@rjsports.com", "Quick response guaranteed"] },
     { icon: Clock, title: "Training Hours", details: ["Mon-Fri: 6 AM - 10 PM", "Sat-Sun: 8 AM - 8 PM"] }
