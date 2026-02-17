@@ -2,7 +2,7 @@ import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 import { ArrowLeft, Target, Eye, Trophy } from "lucide-react";
-import { motion } from "framer-motion";
+
 import founderImage from "@/assets/founder-ranjith.jpg";
 import coFounderImage from "@/assets/co-founder.jpg";
 import logo from "@/assets/logo.png";
@@ -51,7 +51,7 @@ const AboutUs = () => {
               <ArrowLeft className="w-5 h-5" />
               <span className="font-medium">Back to Home</span>
             </Link>
-            <img src={logo} alt="RJ Sportz" className="h-8" />
+            <img src={logo} alt="RJ Sportz" className="h-12" />
           </div>
         </div>
       </header>
@@ -60,34 +60,22 @@ const AboutUs = () => {
         <div className="container mx-auto px-6">
           
           {/* Hero Section with 3D elements */}
-          <div className="text-center mb-16 relative overflow-hidden py-8">
-            {/* 3D geometric decorations */}
-            <motion.div 
-              className="absolute top-0 left-10 w-24 h-24 border-2 border-primary/15 rounded-lg"
-              animate={{ rotate: 360, y: [0, -15, 0] }}
-              transition={{ rotate: { duration: 20, repeat: Infinity, ease: "linear" }, y: { duration: 5, repeat: Infinity } }}
-              style={{ transformStyle: "preserve-3d", transform: "perspective(500px) rotateX(20deg) rotateY(15deg)" }}
-            />
-            <motion.div 
-              className="absolute top-10 right-16 w-20 h-20 border-2 border-primary/10"
-              animate={{ rotate: -360, scale: [1, 1.1, 1] }}
-              transition={{ rotate: { duration: 25, repeat: Infinity, ease: "linear" }, scale: { duration: 6, repeat: Infinity } }}
-              style={{ clipPath: "polygon(50% 0%, 0% 100%, 100% 100%)" }}
-            />
-            <motion.div 
-              className="absolute bottom-0 left-1/4 w-16 h-16 bg-primary/5 rounded-full border border-primary/15"
-              animate={{ y: [0, -20, 0] }}
-              transition={{ duration: 4, repeat: Infinity }}
-            />
-            <motion.div 
-              className="absolute bottom-5 right-1/4 w-14 h-14 border border-primary/10 rounded-lg"
-              animate={{ rotate: 180, y: [0, 10, 0] }}
-              transition={{ rotate: { duration: 15, repeat: Infinity, ease: "linear" }, y: { duration: 3, repeat: Infinity } }}
-              style={{ transformStyle: "preserve-3d", transform: "perspective(400px) rotateX(30deg)" }}
-            />
+          <div className="text-center mb-16 relative overflow-hidden py-12 rounded-3xl">
+            {/* Pattern Background */}
+            <div className="absolute inset-0 opacity-[0.03]" style={{
+              backgroundImage: `radial-gradient(circle at 1px 1px, hsl(var(--primary)) 1px, transparent 0)`,
+              backgroundSize: '40px 40px'
+            }} />
+            <div className="absolute inset-0 opacity-[0.02]" style={{
+              backgroundImage: `linear-gradient(45deg, hsl(var(--primary)) 25%, transparent 25%, transparent 75%, hsl(var(--primary)) 75%), linear-gradient(45deg, hsl(var(--primary)) 25%, transparent 25%, transparent 75%, hsl(var(--primary)) 75%)`,
+              backgroundSize: '60px 60px',
+              backgroundPosition: '0 0, 30px 30px'
+            }} />
+            <div className="absolute top-0 left-1/4 w-64 h-64 bg-gradient-to-br from-primary/8 to-transparent rounded-full blur-[100px]"></div>
+            <div className="absolute bottom-0 right-1/4 w-48 h-48 bg-gradient-to-tl from-primary/5 to-transparent rounded-full blur-[80px]"></div>
 
             <h1 className="text-4xl md:text-6xl font-bold mb-6 text-foreground relative z-10">
-              About <span className="text-primary">RJ Sportz</span>
+              About <span className="bg-gradient-to-r from-primary via-emerald-400 to-primary bg-clip-text text-transparent">RJ Sportz</span>
             </h1>
             <p className="text-lg text-muted-foreground max-w-3xl mx-auto leading-relaxed relative z-10">
               Founded with a vision to make professional sports training accessible to everyone, 
