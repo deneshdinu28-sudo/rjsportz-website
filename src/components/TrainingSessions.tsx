@@ -85,9 +85,6 @@ const TrainingSessions = () => {
                 </ul>
                 
                 <div className="pt-4 border-t border-border">
-                  <div className="text-2xl font-bold text-primary mb-4 text-center">
-                    {session.price}
-                  </div>
                   <Button className="w-full" variant="outline" onClick={scrollToContact}>
                     Get Started
                   </Button>
