@@ -28,7 +28,7 @@ const Navigation = () => {
       isScrolled ? 'bg-background/95 backdrop-blur-sm shadow-lg border-b border-border/50' : 'bg-transparent'
     }`}>
       <div className="container mx-auto px-6">
-        <div className="flex items-center justify-between h-20 pt-2">
+        <div className="flex items-center justify-between h-16">
           <Link to="/" className="flex items-center">
             <img src={logo} alt="RJ Sportz" className="h-14 object-contain" />
           </Link>
