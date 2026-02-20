@@ -30,7 +30,7 @@ const Navigation = () => {
       <div className="container mx-auto px-6">
         <div className="flex items-center justify-between h-24 pt-2">
           <Link to="/" className="flex items-center">
-            <img src={logo} alt="RJ Sportz" className="h-20 object-contain" />
+            <img src={logo} alt="RJ Sportz" className="h-24 object-contain" />
           </Link>
 
           <div className="hidden md:flex items-center space-x-8">
