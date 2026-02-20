@@ -10,7 +10,7 @@ const Footer = () => {
       <div className="container mx-auto px-6 py-16">
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-12">
           <div>
-            <img src={logo} alt="RJ Sportz" className="h-24 mb-4" />
+            <img src={logo} alt="RJ Sportz" className="h-32 mb-4" />
             <p className="text-muted-foreground mb-6">
               Professional multi-sport training delivered at your doorstep. Expert coaching in badminton, yoga, karate, skating, swimming, and table tennis.
             </p>
