@@ -15,7 +15,7 @@ const Testimonials = () => {
   const testimonials = [
     {
       id: 1, name: "Alex Chen", occupation: "Software Engineer", image: testimonial1,
-      rating: 5, text: "RJ Sports coaching transformed my game completely! From barely hitting the shuttlecock to winning local tournaments. His technical expertise and patient teaching style made all the difference.", initials: "AC"
+      rating: 5, text: "RJ Sportz coaching transformed my game completely! From barely hitting the shuttlecock to winning local tournaments. His technical expertise and patient teaching style made all the difference.", initials: "AC"
     },
     {
       id: 2, name: "Sarah Johnson", occupation: "Marketing Manager", image: testimonial2,
@@ -35,7 +35,7 @@ const Testimonials = () => {
             What Our <span className="text-primary">Students Say</span>
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Real feedback from athletes who've transformed their sports journey with RJ Sports
+            Real feedback from athletes who've transformed their sports journey with RJ Sportz
           </p>
         </div>
 
