@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { motion } from "framer-motion";
+import heroCollage from "@/assets/hero-sports-collage.jpg";
 
 const Hero = () => {
   const scrollToSection = (id: string) => {
@@ -11,9 +12,9 @@ const Hero = () => {
       {/* Background Image */}
       <div className="absolute inset-0 z-0">
         <img 
-          src="https://images.unsplash.com/photo-1461896836934-bd45ba8fcab7?w=1920" 
-          alt="Athletes training together" 
-          className="w-full h-full object-cover opacity-25"
+          src={heroCollage} 
+          alt="Badminton, Yoga, Karate, Skating, Swimming & Table Tennis" 
+          className="w-full h-full object-cover opacity-30"
         />
         <div className="absolute inset-0 bg-gradient-to-b from-background/90 via-background/60 to-background"></div>
         <div className="absolute inset-0 bg-gradient-to-r from-primary/10 via-transparent to-primary/5"></div>
