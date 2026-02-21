@@ -20,16 +20,6 @@ const Hero = () => {
         <div className="absolute inset-0 bg-gradient-to-r from-primary/10 via-transparent to-primary/5"></div>
       </div>
       
-      {/* Pattern Background */}
-      <div className="absolute inset-0 z-[1] opacity-[0.03]" style={{
-        backgroundImage: `radial-gradient(circle at 1px 1px, hsl(var(--primary)) 1px, transparent 0)`,
-        backgroundSize: '40px 40px'
-      }} />
-      <div className="absolute inset-0 z-[1] opacity-[0.02]" style={{
-        backgroundImage: `linear-gradient(45deg, hsl(var(--primary)) 25%, transparent 25%, transparent 75%, hsl(var(--primary)) 75%), linear-gradient(45deg, hsl(var(--primary)) 25%, transparent 25%, transparent 75%, hsl(var(--primary)) 75%)`,
-        backgroundSize: '60px 60px',
-        backgroundPosition: '0 0, 30px 30px'
-      }} />
 
       {/* Gradient glow effects */}
       <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-gradient-to-br from-primary/8 to-transparent rounded-full blur-[120px]"></div>
