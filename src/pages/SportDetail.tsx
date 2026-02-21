@@ -28,7 +28,7 @@ const sportsData: Record<string, {
     benefits: ["Improved reflexes and agility", "Full body cardiovascular workout", "Strategic thinking development", "Social and competitive play", "Professional tournament preparation"],
     details: ["Beginner to advanced level training available", "Focus on singles and doubles strategy", "Footwork drills, smash techniques, and net play", "Regular practice matches and friendly tournaments", "Equipment guidance and racket selection advice"],
     testimonials: [
-      { name: "Alex Chen", occupation: "Software Engineer", image: testimonial1, initials: "AC", rating: 5, text: "RJ Sports coaching transformed my badminton game completely! From barely hitting the shuttlecock to winning local tournaments." },
+      { name: "Alex Chen", occupation: "Software Engineer", image: testimonial1, initials: "AC", rating: 5, text: "RJ Sportz coaching transformed my badminton game completely! From barely hitting the shuttlecock to winning local tournaments." },
       { name: "James Thompson", occupation: "Engineer", image: testimonial2, initials: "JT", rating: 5, text: "Best badminton coach I've ever worked with! The attention to detail in correcting my technique is impressive." },
     ]
   },
@@ -52,7 +52,7 @@ const sportsData: Record<string, {
     benefits: ["Self-defense skills", "Improved discipline and focus", "Physical conditioning", "Belt progression system", "Competition preparation"],
     details: ["Traditional Shotokan and Wado-Ryu styles", "Belt grading from white to black belt", "Kata, kumite, and self-defense modules", "Children and adult batches", "Competition coaching for state and national levels"],
     testimonials: [
-      { name: "David Kumar", occupation: "Business Owner", image: testimonial3, initials: "DK", rating: 5, text: "My kids love karate training with RJ Sports. The discipline and focus they've gained is remarkable." },
+      { name: "David Kumar", occupation: "Business Owner", image: testimonial3, initials: "DK", rating: 5, text: "My kids love karate training with RJ Sportz. The discipline and focus they've gained is remarkable." },
       { name: "Emily Watson", occupation: "College Student", image: testimonial1, initials: "EW", rating: 5, text: "Started karate for self-defense, stayed for the incredible fitness benefits and confidence boost." },
     ]
   },
