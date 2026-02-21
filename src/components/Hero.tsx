@@ -14,7 +14,7 @@ const Hero = () => {
         <img 
           src={heroCollage} 
           alt="Badminton, Yoga, Karate, Skating, Swimming & Table Tennis" 
-          className="w-full h-full object-cover opacity-30"
+          className="w-full h-full object-cover opacity-50"
         />
         <div className="absolute inset-0 bg-gradient-to-b from-background/90 via-background/60 to-background"></div>
         <div className="absolute inset-0 bg-gradient-to-r from-primary/10 via-transparent to-primary/5"></div>
