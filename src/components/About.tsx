@@ -3,6 +3,7 @@ import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 import { useScrollAnimation } from "@/hooks/useScrollAnimation";
 import coachingImage from "@/assets/coaching-session.jpg";
+import coachAboutImage from "@/assets/coach-about.jpg";
 
 const About = () => {
   const { ref, isVisible } = useScrollAnimation();
@@ -21,8 +22,8 @@ const About = () => {
           {/* Image */}
           <div className="relative">
             <img 
-              src="https://images.unsplash.com/photo-1461896836934-bd45ba8fcf9b?w=800" 
-              alt="Multi-sport training session"
+              src={coachAboutImage} 
+              alt="Professional sports coach in action"
               className="rounded-2xl w-full h-[500px] object-cover border border-border/50"
             />
             <div className="absolute -bottom-6 -right-6 bg-primary p-6 rounded-xl shadow-[0_0_30px_hsl(105_98%_51%/0.3)]">
