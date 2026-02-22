@@ -1,6 +1,7 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { useScrollAnimation } from "@/hooks/useScrollAnimation";
 import { Link } from "react-router-dom";
+import skatingImage from "@/assets/skating-focus.jpg";
 
 const WeFocusOn = () => {
   const { ref, isVisible } = useScrollAnimation();
@@ -27,7 +28,7 @@ const WeFocusOn = () => {
     {
       title: "Skating",
       slug: "skating",
-      image: "https://images.unsplash.com/photo-1558618666-fcd25c85f82e?w=800",
+      image: skatingImage,
       description: "Learn roller skating from basics to advanced tricks with expert coaches"
     },
     {
