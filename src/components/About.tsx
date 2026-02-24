@@ -34,12 +34,11 @@ const About = () => {
             </h2>
             
             <p className="text-lg text-muted-foreground mb-6 leading-relaxed">
-              With over <strong className="text-primary">15 years of experience</strong> and <strong className="text-primary">1000+ students trained</strong>, RJ Sportz has been dedicated to helping athletes of all levels achieve their goals across multiple disciplines.
+              With years of dedicated experience in professional sports training, RJ Sportz has been committed to helping athletes of all levels reach their full potential across multiple disciplines.
             </p>
             
             <p className="text-lg text-muted-foreground mb-6 leading-relaxed">
-              Our philosophy at RJ Sportz focuses on holistic development through badminton, yoga, 
-              karate, skating, swimming, and table tennis. We bring professional coaching directly to you.
+              Our approach focuses on holistic development through badminton, yoga, karate, skating, swimming, and table tennis. We bring expert coaching directly to your doorstep, making professional training accessible and convenient for everyone.
             </p>
             
             <Link to="/about">
