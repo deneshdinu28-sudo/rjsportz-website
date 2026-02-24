@@ -34,7 +34,7 @@ const About = () => {
             </h2>
             
             <p className="text-lg text-muted-foreground mb-6 leading-relaxed">
-              Once ranked <strong className="text-primary">#16 in India</strong> and <strong className="text-primary">#2 in his state</strong>, Coach Ranjith has dedicated over 15 years to helping athletes of all levels achieve their goals across multiple disciplines.
+              With over <strong className="text-primary">15 years of experience</strong> and <strong className="text-primary">1000+ students trained</strong>, RJ Sportz has been dedicated to helping athletes of all levels achieve their goals across multiple disciplines.
             </p>
             
             <p className="text-lg text-muted-foreground mb-6 leading-relaxed">
