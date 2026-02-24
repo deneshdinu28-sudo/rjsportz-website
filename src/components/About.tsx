@@ -30,7 +30,7 @@ const About = () => {
   }, []);
 
   useEffect(() => {
-    const timer = setInterval(next, 3000);
+    const timer = setInterval(next, 8000);
     return () => clearInterval(timer);
   }, [next]);
 
