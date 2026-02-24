@@ -13,7 +13,7 @@ const AboutUs = () => {
       name: "Ranjith Kumar",
       occupation: "Founder & Head Coach",
       image: founderImage,
-      description: "BWF Level 3 Certified Coach, State Level Champion"
+      description: "BWF Level 3 Certified Coach, Ranked #16 in India & #2 in State"
     },
     {
       name: "Priya Sharma", 
@@ -37,7 +37,7 @@ const AboutUs = () => {
     {
       icon: Trophy,
       title: "Our Goals",
-      description: "To train 1000+ students, develop champions, and establish RJ Sportz as the premier choice for home-based sports and fitness training across the region."
+      description: "To train 2000+ students, develop national-level champions, and establish RJ Sportz as the premier choice for home-based sports and fitness training across the region."
     }
   ];
 
@@ -101,21 +101,21 @@ const AboutUs = () => {
                 
                 <div className="space-y-6">
                   <p className="text-lg text-muted-foreground leading-relaxed">
-                    From playing badminton on the streets with makeshift rackets to becoming a state-level champion, 
-                    Ranjith's journey is one of determination and passion. Growing up in a modest family, he discovered 
+                    From playing badminton on the streets with makeshift rackets to being ranked <strong className="text-primary">#16 in India</strong> and <strong className="text-primary">#2 in his state</strong>, 
+                    Ranjith's journey is one of extraordinary determination and passion. Growing up in a modest family, he discovered 
                     his love for badminton at the age of 12 when he first held a proper racket.
                   </p>
                   
                   <p className="text-lg text-muted-foreground leading-relaxed">
                     Despite financial constraints, Ranjith's dedication never wavered. He practiced for hours, 
                     often using public courts and borrowed equipment. His breakthrough came when he won his first 
-                    district championship at 16, which opened doors to better training facilities.
+                    district championship at 14, which opened doors to better training facilities and national-level competitions.
                   </p>
                   
                   <p className="text-lg text-muted-foreground leading-relaxed">
-                    After achieving success at the state level and earning his BWF Level 3 certification, 
+                    After reaching the pinnacle of his competitive career with a national ranking of #16 and earning his BWF Level 3 certification, 
                     Ranjith realized his true calling was to make quality sports training accessible to everyone, 
-                    regardless of their location or circumstances. This vision led to the birth of RJ Sportz.
+                    regardless of their location or circumstances. With over 15 years of experience and 1000+ students trained, this vision led to the birth of RJ Sportz.
                   </p>
                   
                   <div className="bg-gradient-to-r from-primary/10 to-accent/10 p-6 rounded-xl">
@@ -183,7 +183,7 @@ const AboutUs = () => {
                 Ready to Start Your Journey?
               </h2>
               <p className="text-lg text-muted-foreground mb-8 max-w-2xl mx-auto">
-                Join hundreds of students who have transformed their lives through our personalized 
+                Join over 1000 students who have transformed their lives through our personalized 
                 at-home training programs.
               </p>
               <Link to="/#contact">

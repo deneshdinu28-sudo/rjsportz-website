@@ -8,10 +8,10 @@ const About = () => {
   const { ref, isVisible } = useScrollAnimation();
 
   const achievements = [
-    { number: "10+", label: "Years Experience" },
-    { number: "500+", label: "Students Trained" },
-    { number: "15", label: "Championships Won" },
-    { number: "98%", label: "Success Rate" }
+    { number: "15+", label: "Years Experience" },
+    { number: "1000+", label: "Students Trained" },
+    { number: "#16", label: "Rank in India" },
+    { number: "#2", label: "State Ranking" }
   ];
 
   return (
@@ -34,8 +34,7 @@ const About = () => {
             </h2>
             
             <p className="text-lg text-muted-foreground mb-6 leading-relaxed">
-              With over a decade of experience in professional sports, I've dedicated my career 
-              to helping athletes of all levels achieve their goals across multiple disciplines.
+              Once ranked <strong className="text-primary">#16 in India</strong> and <strong className="text-primary">#2 in his state</strong>, Coach Ranjith has dedicated over 15 years to helping athletes of all levels achieve their goals across multiple disciplines.
             </p>
             
             <p className="text-lg text-muted-foreground mb-6 leading-relaxed">
