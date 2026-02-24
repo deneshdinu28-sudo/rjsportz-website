@@ -133,7 +133,7 @@ const Feedbacks = () => {
               </div>
             </div>
             <div className="text-center">
-              <div className="text-4xl font-bold text-primary mb-2">50+</div>
+              <div className="text-4xl font-bold text-primary mb-2">1000+</div>
               <div className="text-muted-foreground">Happy Students</div>
             </div>
             <div className="text-center">
@@ -141,7 +141,7 @@ const Feedbacks = () => {
               <div className="text-muted-foreground">Satisfaction Rate</div>
             </div>
             <div className="text-center">
-              <div className="text-4xl font-bold text-primary mb-2">3+</div>
+              <div className="text-4xl font-bold text-primary mb-2">15+</div>
               <div className="text-muted-foreground">Years Experience</div>
             </div>
           </div>
