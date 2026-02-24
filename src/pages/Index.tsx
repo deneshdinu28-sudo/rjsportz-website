@@ -2,6 +2,7 @@ import Navigation from "@/components/Navigation";
 import Hero from "@/components/Hero";
 import About from "@/components/About";
 import WeFocusOn from "@/components/WeFocusOn";
+import WhyChooseUs from "@/components/WhyChooseUs";
 import TrainingSessions from "@/components/TrainingSessions";
 import Testimonials from "@/components/Testimonials";
 import Contact from "@/components/Contact";
@@ -20,6 +21,9 @@ const Index = () => {
         </section>
         <section id="focus">
           <WeFocusOn />
+        </section>
+        <section id="why-choose-us">
+          <WhyChooseUs />
         </section>
         <section id="services">
           <TrainingSessions />

@@ -59,12 +59,12 @@ const WeFocusOn = () => {
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           {activities.map((activity, index) => (
-            <Link to={`/sport/${activity.slug}`} key={index}>
+            <Link to={`/sport/${activity.slug}`} key={index} className="flex">
               <Card 
-                className={`group hover:shadow-[0_0_30px_hsl(105_98%_51%/0.2)] transition-all duration-500 hover:-translate-y-2 overflow-hidden border-border/50 cursor-pointer ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}
+                className={`group hover:shadow-[0_0_30px_hsl(105_98%_51%/0.2)] transition-all duration-500 hover:-translate-y-2 overflow-hidden border-border/50 cursor-pointer flex flex-col w-full ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}
                 style={{ transitionDelay: `${index * 100}ms` }}
               >
-                <div className="relative h-48 overflow-hidden">
+                <div className="relative h-48 overflow-hidden flex-shrink-0">
                   <img 
                     src={activity.image} 
                     alt={activity.title}
@@ -77,8 +77,8 @@ const WeFocusOn = () => {
                     </h3>
                   </div>
                 </div>
-                <CardContent className="p-4">
-                  <p className="text-sm text-muted-foreground">
+                <CardContent className="p-4 flex flex-col flex-grow">
+                  <p className="text-sm text-muted-foreground flex-grow">
                     {activity.description}
                   </p>
                   <span className="text-primary text-sm font-semibold mt-2 inline-block group-hover:translate-x-1 transition-transform">

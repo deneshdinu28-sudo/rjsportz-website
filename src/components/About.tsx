@@ -2,11 +2,19 @@ import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 import { useScrollAnimation } from "@/hooks/useScrollAnimation";
-import coachingImage from "@/assets/coaching-session.jpg";
+import { useRef } from "react";
+import { ChevronLeft, ChevronRight } from "lucide-react";
 import coachAboutImage from "@/assets/coach-about.jpg";
+import coachBadminton from "@/assets/coach-badminton.jpg";
+import coachYoga from "@/assets/coach-yoga.jpg";
+import coachKarate from "@/assets/coach-karate.jpg";
+import coachSkating from "@/assets/coach-skating.jpg";
+import coachSwimming from "@/assets/coach-swimming.jpg";
+import coachTabletennis from "@/assets/coach-tabletennis.jpg";
 
 const About = () => {
   const { ref, isVisible } = useScrollAnimation();
+  const scrollRef = useRef<HTMLDivElement>(null);
 
   const achievements = [
     { number: "10+", label: "Years Experience" },
@@ -14,6 +22,25 @@ const About = () => {
     { number: "15", label: "Championships Won" },
     { number: "98%", label: "Success Rate" }
   ];
+
+  const coaches = [
+    { sport: "Badminton", image: coachBadminton },
+    { sport: "Yoga", image: coachYoga },
+    { sport: "Karate", image: coachKarate },
+    { sport: "Skating", image: coachSkating },
+    { sport: "Swimming", image: coachSwimming },
+    { sport: "Table Tennis", image: coachTabletennis },
+  ];
+
+  const scroll = (direction: "left" | "right") => {
+    if (scrollRef.current) {
+      const amount = 280;
+      scrollRef.current.scrollBy({
+        left: direction === "left" ? -amount : amount,
+        behavior: "smooth",
+      });
+    }
+  };
 
   return (
     <section className="py-20 bg-secondary/20">
@@ -66,6 +93,52 @@ const About = () => {
                 </Card>
               ))}
             </div>
+          </div>
+        </div>
+
+        {/* Scrollable Coach Images */}
+        <div className={`mt-16 transition-all duration-700 delay-300 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
+          <div className="flex items-center justify-between mb-6">
+            <h3 className="text-2xl font-bold text-foreground">
+              Our <span className="text-primary">Coaches</span>
+            </h3>
+            <div className="flex gap-2">
+              <button
+                onClick={() => scroll("left")}
+                className="p-2 rounded-full border border-border/50 hover:bg-primary/10 transition-colors"
+                aria-label="Scroll left"
+              >
+                <ChevronLeft className="w-5 h-5 text-foreground" />
+              </button>
+              <button
+                onClick={() => scroll("right")}
+                className="p-2 rounded-full border border-border/50 hover:bg-primary/10 transition-colors"
+                aria-label="Scroll right"
+              >
+                <ChevronRight className="w-5 h-5 text-foreground" />
+              </button>
+            </div>
+          </div>
+          <div
+            ref={scrollRef}
+            className="flex gap-6 overflow-x-auto scrollbar-hide pb-4"
+            style={{ scrollbarWidth: "none", msOverflowStyle: "none" }}
+          >
+            {coaches.map((coach, index) => (
+              <div key={index} className="flex-shrink-0 w-64 group">
+                <div className="relative h-44 rounded-xl overflow-hidden border border-border/50">
+                  <img
+                    src={coach.image}
+                    alt={`${coach.sport} coach`}
+                    className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-background/80 to-transparent" />
+                  <div className="absolute bottom-3 left-4">
+                    <span className="text-foreground font-bold text-lg">{coach.sport}</span>
+                  </div>
+                </div>
+              </div>
+            ))}
           </div>
         </div>
       </div>
