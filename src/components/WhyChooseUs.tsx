@@ -45,7 +45,7 @@ const WhyChooseUs = () => {
             Why Choose <span className="text-primary">Us</span>
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            At RJ Sportz, we go beyond training — we build champions with the right mindset, skills, and passion.
+            At RJ Sportz, we go beyond training. We build champions with the right mindset, skills, and passion.
           </p>
         </div>
 
