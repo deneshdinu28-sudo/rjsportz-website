@@ -4,28 +4,11 @@ import { Avatar, AvatarImage, AvatarFallback } from "@/components/ui/avatar";
 import { Star, Quote } from "lucide-react";
 import { useNavigate } from "react-router-dom";
 import { useScrollAnimation } from "@/hooks/useScrollAnimation";
-import testimonial1 from "@/assets/testimonial-1.jpg";
-import testimonial2 from "@/assets/testimonial-2.jpg";
-import testimonial3 from "@/assets/testimonial-3.jpg";
+import { featuredTestimonials } from "@/data/testimonials";
 
 const Testimonials = () => {
   const navigate = useNavigate();
   const { ref, isVisible } = useScrollAnimation();
-
-  const testimonials = [
-    {
-      id: 1, name: "Alex Chen", occupation: "Software Engineer", image: testimonial1,
-      rating: 5, text: "RJ Sportz coaching transformed my game completely! From barely hitting the shuttlecock to winning local tournaments. His technical expertise and patient teaching style made all the difference.", initials: "AC"
-    },
-    {
-      id: 2, name: "Sarah Johnson", occupation: "Marketing Manager", image: testimonial2,
-      rating: 5, text: "Amazing coach! RJ helped me improve my footwork and strategy. The personalized training sessions really accelerated my progress. Highly recommended for players of all levels.", initials: "SJ"
-    },
-    {
-      id: 3, name: "David Kumar", occupation: "Business Owner", image: testimonial3,
-      rating: 5, text: "Professional, dedicated, and results-driven coaching. RJ's approach to building fundamentals while keeping sessions fun and engaging is exceptional. My entire family trains with him now!", initials: "DK"
-    }
-  ];
 
   return (
     <section className="py-20 bg-background">
@@ -40,7 +23,7 @@ const Testimonials = () => {
         </div>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
-          {testimonials.map((testimonial, index) => (
+          {featuredTestimonials.map((testimonial, index) => (
             <Card 
               key={testimonial.id} 
               className={`border-border/50 hover:shadow-[0_0_30px_hsl(105_98%_51%/0.1)] transition-all duration-500 hover:scale-[1.02] ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}
