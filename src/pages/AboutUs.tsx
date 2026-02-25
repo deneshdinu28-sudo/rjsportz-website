@@ -1,16 +1,16 @@
 import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
-import { ArrowLeft, Target, Eye, Trophy } from "lucide-react";
+import { Target, Eye, Trophy } from "lucide-react";
+import Navigation from "@/components/Navigation";
 
 import founderImage from "@/assets/founder-ranjith.jpg";
 import coFounderImage from "@/assets/co-founder.jpg";
-import logo from "@/assets/logo.png";
 
 const AboutUs = () => {
   const staff = [
     {
-      name: "Ranjith Kumar",
+      name: "Ranjit Subramaniyam",
       occupation: "Founder & Head Coach",
       image: founderImage,
       description: "BWF Level 3 Certified Coach, Ranked #16 in India & #2 in State"
@@ -43,20 +43,9 @@ const AboutUs = () => {
 
   return (
     <div className="min-h-screen bg-background">
-      {/* Header */}
-      <header className="bg-card border-b border-border sticky top-0 z-50">
-        <div className="container mx-auto px-6 py-4">
-          <div className="flex items-center justify-between">
-            <Link to="/" className="flex items-center space-x-2">
-              <ArrowLeft className="w-5 h-5" />
-              <span className="font-medium">Back to Home</span>
-            </Link>
-            <img src={logo} alt="RJ Sportz" className="h-12" />
-          </div>
-        </div>
-      </header>
+      <Navigation />
 
-      <main className="py-20">
+      <main className="pt-24 py-20">
         <div className="container mx-auto px-6">
           
           {/* Hero Section with 3D elements */}
@@ -86,35 +75,35 @@ const AboutUs = () => {
           {/* Founder's Story */}
           <section className="mb-20">
             <div className="bg-gradient-to-br from-card to-secondary/30 rounded-3xl p-8 md:p-12">
-              <h2 className="text-3xl md:text-4xl font-bold mb-8 text-center text-foreground">
-                The Journey of <span className="text-primary">Ranjith</span>
+            <h2 className="text-3xl md:text-4xl font-bold mb-8 text-center text-foreground">
+                The Journey of <span className="text-primary">Ranjit</span>
               </h2>
               
               <div className="grid lg:grid-cols-2 gap-12 items-center">
                 <div>
                   <img 
                     src={founderImage} 
-                    alt="Ranjith Kumar - Founder of RJ Sportz"
+                    alt="Ranjit Subramaniyam - Founder of RJ Sportz"
                     className="rounded-2xl shadow-lg w-full h-[400px] object-cover"
                   />
                 </div>
                 
                 <div className="space-y-6">
                   <p className="text-lg text-muted-foreground leading-relaxed">
-                    From playing badminton on the streets with makeshift rackets to being ranked <strong className="text-primary">#16 in India</strong> and <strong className="text-primary">#2 in his state</strong>, 
-                    Ranjith's journey is one of extraordinary determination and passion. Growing up in a modest family, he discovered 
-                    his love for badminton at the age of 12 when he first held a proper racket.
+                    From playing badminton on the streets with makeshift rackets to becoming an elite-level player, 
+                    Ranjit's journey is one of extraordinary determination and passion. Growing up in a modest family, 
+                    his love for the sport was ignited on neighbourhood courts with borrowed equipment.
                   </p>
                   
                   <p className="text-lg text-muted-foreground leading-relaxed">
-                    Despite financial constraints, Ranjith's dedication never wavered. He practiced for hours, 
-                    often using public courts and borrowed equipment. His breakthrough came when he won his first 
-                    district championship at 14, which opened doors to better training facilities and national-level competitions.
+                    Despite financial constraints, Ranjit's dedication never wavered. He trained relentlessly, 
+                    earning recognition at district, state, and national-level competitions. His breakthrough performances 
+                    opened doors to better training facilities and competitive exposure across the country.
                   </p>
                   
                   <p className="text-lg text-muted-foreground leading-relaxed">
-                    After reaching the pinnacle of his competitive career with a national ranking of #16 and earning his BWF Level 3 certification, 
-                    Ranjith realized his true calling was to make quality sports training accessible to everyone, 
+                    After reaching the pinnacle of his competitive career and earning his BWF Level 3 certification, 
+                    Ranjit realized his true calling was to make quality sports training accessible to everyone, 
                     regardless of their location or circumstances. With over 15 years of experience and 1000+ students trained, this vision led to the birth of RJ Sportz.
                   </p>
                   
@@ -123,7 +112,7 @@ const AboutUs = () => {
                       "Every child deserves the chance to pursue their dreams. If I can bring professional training 
                       to their doorstep, then distance and accessibility will never be barriers to success."
                     </p>
-                    <p className="text-sm text-muted-foreground mt-2">- Ranjith Kumar, Founder</p>
+                    <p className="text-sm text-muted-foreground mt-2">- Ranjit Subramaniyam, Founder</p>
                   </div>
                 </div>
               </div>
