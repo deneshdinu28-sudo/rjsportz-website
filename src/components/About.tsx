@@ -10,8 +10,8 @@ const About = () => {
   const achievements = [
     { number: "15+", label: "Years Experience" },
     { number: "1000+", label: "Students Trained" },
-    { number: "#16", label: "Rank in India" },
-    { number: "#2", label: "State Ranking" }
+    { number: "6+", label: "Sports Offered" },
+    { number: "50+", label: "Certified Coaches" }
   ];
 
   return (
