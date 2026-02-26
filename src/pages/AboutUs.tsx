@@ -49,24 +49,12 @@ const AboutUs = () => {
         <div className="container mx-auto px-6">
           
           {/* Hero Section with 3D elements */}
-          <div className="text-center mb-16 relative overflow-hidden py-12 rounded-3xl">
-            {/* Pattern Background */}
-            <div className="absolute inset-0 opacity-[0.03]" style={{
-              backgroundImage: `radial-gradient(circle at 1px 1px, hsl(var(--primary)) 1px, transparent 0)`,
-              backgroundSize: '40px 40px'
-            }} />
-            <div className="absolute inset-0 opacity-[0.02]" style={{
-              backgroundImage: `linear-gradient(45deg, hsl(var(--primary)) 25%, transparent 25%, transparent 75%, hsl(var(--primary)) 75%), linear-gradient(45deg, hsl(var(--primary)) 25%, transparent 25%, transparent 75%, hsl(var(--primary)) 75%)`,
-              backgroundSize: '60px 60px',
-              backgroundPosition: '0 0, 30px 30px'
-            }} />
-            <div className="absolute top-0 left-1/4 w-64 h-64 bg-gradient-to-br from-primary/8 to-transparent rounded-full blur-[100px]"></div>
-            <div className="absolute bottom-0 right-1/4 w-48 h-48 bg-gradient-to-tl from-primary/5 to-transparent rounded-full blur-[80px]"></div>
+          <div className="text-center mb-16 py-12 rounded-3xl">
 
-            <h1 className="text-4xl md:text-6xl font-bold mb-6 text-foreground relative z-10">
+            <h1 className="text-4xl md:text-6xl font-bold mb-6 text-foreground">
               About <span className="bg-gradient-to-r from-primary via-emerald-400 to-primary bg-clip-text text-transparent">RJ Sportz</span>
             </h1>
-            <p className="text-lg text-muted-foreground max-w-3xl mx-auto leading-relaxed relative z-10">
+            <p className="text-lg text-muted-foreground max-w-3xl mx-auto leading-relaxed">
               Founded with a vision to make professional sports training accessible to everyone, 
               RJ Sportz brings expert coaching in badminton, yoga, and fitness directly to your doorstep.
             </p>
