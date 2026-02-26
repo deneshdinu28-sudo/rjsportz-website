@@ -55,8 +55,7 @@ const AboutUs = () => {
               About <span className="bg-gradient-to-r from-primary via-emerald-400 to-primary bg-clip-text text-transparent">RJ Sportz</span>
             </h1>
             <p className="text-lg text-muted-foreground max-w-3xl mx-auto leading-relaxed">
-              Founded with a vision to make professional sports training accessible to everyone, 
-              RJ Sportz brings expert coaching in badminton, yoga, and fitness directly to your doorstep.
+              RJ Sportz is your trusted at-home sports academy offering expert coaching in badminton, yoga, karate, skating, swimming, and table tennis for all ages and skill levels.
             </p>
           </div>
 
@@ -82,7 +81,7 @@ const AboutUs = () => {
                   </p>
                   
                   <p className="text-lg text-muted-foreground leading-relaxed">
-                    With a dream to make professional sports training accessible to all, he founded <span className="text-primary font-semibold">RJ Sportz</span> — bringing expert coaching in badminton, yoga, karate, skating, swimming, and table tennis right to your doorstep.
+                    With a dream to make professional sports training accessible to all, he founded <span className="text-primary font-semibold">RJ Sportz</span>, bringing expert coaching in badminton, yoga, karate, skating, swimming, and table tennis right to your doorstep.
                   </p>
                   
                   <div className="bg-gradient-to-r from-primary/10 to-accent/10 p-5 rounded-xl">
