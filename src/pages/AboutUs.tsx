@@ -63,44 +63,33 @@ const AboutUs = () => {
           {/* Founder's Story */}
           <section className="mb-20">
             <div className="bg-gradient-to-br from-card to-secondary/30 rounded-3xl p-8 md:p-12">
-            <h2 className="text-3xl md:text-4xl font-bold mb-8 text-center text-foreground">
+              <h2 className="text-3xl md:text-4xl font-bold mb-8 text-center text-foreground">
                 The Journey of <span className="text-primary">Ranjit</span>
               </h2>
               
-              <div className="grid lg:grid-cols-2 gap-12 items-center">
+              <div className="grid lg:grid-cols-2 gap-8 items-start">
                 <div>
                   <img 
                     src={founderImage} 
                     alt="Ranjit Subramaniyam - Founder of RJ Sportz"
-                    className="rounded-2xl shadow-lg w-full h-[400px] object-cover"
+                    className="rounded-2xl shadow-lg w-full h-[350px] object-cover"
                   />
                 </div>
                 
-                <div className="space-y-6">
+                <div className="space-y-5">
                   <p className="text-lg text-muted-foreground leading-relaxed">
-                    From playing badminton on the streets with makeshift rackets to becoming an elite-level player, 
-                    Ranjit's journey is one of extraordinary determination and passion. Growing up in a modest family, 
-                    his love for the sport was ignited on neighbourhood courts with borrowed equipment.
+                    What started as a passion on neighbourhood courts turned into a lifelong mission. Ranjit rose from humble beginnings to become a BWF Level 3 certified coach, training over 1000+ students across 15+ years.
                   </p>
                   
                   <p className="text-lg text-muted-foreground leading-relaxed">
-                    Despite financial constraints, Ranjit's dedication never wavered. He trained relentlessly, 
-                    earning recognition at district, state, and national-level competitions. His breakthrough performances 
-                    opened doors to better training facilities and competitive exposure across the country.
+                    With a dream to make professional sports training accessible to all, he founded <span className="text-primary font-semibold">RJ Sportz</span> — bringing expert coaching in badminton, yoga, karate, skating, swimming, and table tennis right to your doorstep.
                   </p>
                   
-                  <p className="text-lg text-muted-foreground leading-relaxed">
-                    After reaching the pinnacle of his competitive career and earning his BWF Level 3 certification, 
-                    Ranjit realized his true calling was to make quality sports training accessible to everyone, 
-                    regardless of their location or circumstances. With over 15 years of experience and 1000+ students trained, this vision led to the birth of RJ Sportz.
-                  </p>
-                  
-                  <div className="bg-gradient-to-r from-primary/10 to-accent/10 p-6 rounded-xl">
+                  <div className="bg-gradient-to-r from-primary/10 to-accent/10 p-5 rounded-xl">
                     <p className="text-primary font-semibold italic">
-                      "Every child deserves the chance to pursue their dreams. If I can bring professional training 
-                      to their doorstep, then distance and accessibility will never be barriers to success."
+                      "Every child deserves the chance to chase their dreams — distance should never be a barrier."
                     </p>
-                    <p className="text-sm text-muted-foreground mt-2">- Ranjit Subramaniyam, Founder</p>
+                    <p className="text-sm text-muted-foreground mt-2">— Ranjit Subramaniyam, Founder</p>
                   </div>
                 </div>
               </div>
