@@ -87,9 +87,9 @@ const AboutUs = () => {
                   
                   <div className="bg-gradient-to-r from-primary/10 to-accent/10 p-5 rounded-xl">
                     <p className="text-primary font-semibold italic">
-                      "Every child deserves the chance to chase their dreams — distance should never be a barrier."
+                      "Every child deserves the chance to chase their dreams, distance should never be a barrier."
                     </p>
-                    <p className="text-sm text-muted-foreground mt-2">— Ranjit Subramaniyam, Founder</p>
+                    <p className="text-sm text-muted-foreground mt-2">Ranjit Subramaniyam, Founder</p>
                   </div>
                 </div>
               </div>
