@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
-import { Link, useNavigate } from "react-router-dom";
+import { Link, useNavigate, useLocation } from "react-router-dom";
 import { Menu, X } from "lucide-react";
 import logo from "@/assets/logo.png";
 
@@ -8,6 +8,7 @@ const Navigation = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
   const navigate = useNavigate();
+  const location = useLocation();
 
   useEffect(() => {
     const handleScroll = () => setIsScrolled(window.scrollY > 50);
@@ -15,11 +16,15 @@ const Navigation = () => {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
-  const scrollToSection = (sectionId: string) => {
-    const element = document.getElementById(sectionId);
-    if (element) {
-      element.scrollIntoView({ behavior: 'smooth' });
-      setIsOpen(false);
+  const goToSection = (sectionId: string) => {
+    setIsOpen(false);
+    if (location.pathname === '/') {
+      const element = document.getElementById(sectionId);
+      if (element) {
+        element.scrollIntoView({ behavior: 'smooth' });
+      }
+    } else {
+      navigate(`/#${sectionId}`);
     }
   };
 
@@ -34,12 +39,12 @@ const Navigation = () => {
           </Link>
 
           <div className="hidden md:flex items-center space-x-8">
-            <button onClick={() => scrollToSection('home')} className="text-foreground hover:text-primary transition-colors">Home</button>
+            <button onClick={() => goToSection('home')} className="text-foreground hover:text-primary transition-colors">Home</button>
             <Link to="/about" className="text-foreground hover:text-primary transition-colors">About</Link>
-            <button onClick={() => scrollToSection('services')} className="text-foreground hover:text-primary transition-colors">Programs</button>
-            <button onClick={() => scrollToSection('testimonials')} className="text-foreground hover:text-primary transition-colors">Testimonials</button>
-            <button onClick={() => scrollToSection('contact')} className="text-foreground hover:text-primary transition-colors">Contact</button>
-            <Button onClick={() => scrollToSection('contact')} variant="default">Book Session</Button>
+            <button onClick={() => goToSection('services')} className="text-foreground hover:text-primary transition-colors">Programs</button>
+            <button onClick={() => goToSection('testimonials')} className="text-foreground hover:text-primary transition-colors">Testimonials</button>
+            <button onClick={() => goToSection('contact')} className="text-foreground hover:text-primary transition-colors">Contact</button>
+            <Button onClick={() => goToSection('contact')} variant="default">Book Session</Button>
           </div>
 
           <div className="md:hidden">
@@ -52,12 +57,12 @@ const Navigation = () => {
         {isOpen && (
           <div className="md:hidden bg-background/95 backdrop-blur-sm border-t border-border">
             <div className="px-2 pt-2 pb-3 space-y-1">
-              <button onClick={() => scrollToSection('home')} className="block w-full text-left px-3 py-2 text-foreground hover:text-primary hover:bg-secondary rounded-md transition-colors">Home</button>
-              <Link to="/about" className="block w-full text-left px-3 py-2 text-foreground hover:text-primary hover:bg-secondary rounded-md transition-colors">About</Link>
-              <button onClick={() => scrollToSection('services')} className="block w-full text-left px-3 py-2 text-foreground hover:text-primary hover:bg-secondary rounded-md transition-colors">Programs</button>
-              <button onClick={() => scrollToSection('contact')} className="block w-full text-left px-3 py-2 text-foreground hover:text-primary hover:bg-secondary rounded-md transition-colors">Contact</button>
+              <button onClick={() => goToSection('home')} className="block w-full text-left px-3 py-2 text-foreground hover:text-primary hover:bg-secondary rounded-md transition-colors">Home</button>
+              <Link to="/about" onClick={() => setIsOpen(false)} className="block w-full text-left px-3 py-2 text-foreground hover:text-primary hover:bg-secondary rounded-md transition-colors">About</Link>
+              <button onClick={() => goToSection('services')} className="block w-full text-left px-3 py-2 text-foreground hover:text-primary hover:bg-secondary rounded-md transition-colors">Programs</button>
+              <button onClick={() => goToSection('contact')} className="block w-full text-left px-3 py-2 text-foreground hover:text-primary hover:bg-secondary rounded-md transition-colors">Contact</button>
               <div className="px-3 py-2">
-                <Button onClick={() => scrollToSection('contact')} variant="default" className="w-full">Book Session</Button>
+                <Button onClick={() => goToSection('contact')} variant="default" className="w-full">Book Session</Button>
               </div>
             </div>
           </div>

@@ -1,8 +1,16 @@
 import { Phone, Mail, Clock, Facebook, Instagram, Youtube, Linkedin } from "lucide-react";
+import { Link } from "react-router-dom";
 import logo from "@/assets/logo.png";
 
 const Footer = () => {
-  const services = ["Badminton", "Yoga", "Karate", "Skating", "Swimming", "Table Tennis"];
+  const services = [
+    { name: "Badminton", slug: "badminton" },
+    { name: "Yoga", slug: "yoga" },
+    { name: "Karate", slug: "karate" },
+    { name: "Skating", slug: "skating" },
+    { name: "Swimming", slug: "swimming" },
+    { name: "Table Tennis", slug: "table-tennis" },
+  ];
   const programs = ["Group Programs", "Personal Coaching", "Competition Prep", "Intensive Camps"];
 
   return (
@@ -28,7 +36,7 @@ const Footer = () => {
             <ul className="space-y-3">
               {services.map((service, i) => (
                 <li key={i}>
-                  <a href="#" className="text-muted-foreground hover:text-primary transition-colors">{service}</a>
+                  <Link to={`/sport/${service.slug}`} className="text-muted-foreground hover:text-primary transition-colors">{service.name}</Link>
                 </li>
               ))}
             </ul>
