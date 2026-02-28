@@ -6,12 +6,8 @@ import { Card, CardContent } from "@/components/ui/card";
 import { ArrowLeft, Star, CheckCircle, Users, Clock, Award, Dumbbell } from "lucide-react";
 import { motion } from "framer-motion";
 
-import sportBadminton from "@/assets/sport-badminton.jpg";
-import sportYoga from "@/assets/sport-yoga.jpg";
-import sportKarate from "@/assets/sport-karate.jpg";
-import sportSkating from "@/assets/sport-skating.jpg";
-import sportSwimming from "@/assets/sport-swimming.jpg";
-import sportTabletennis from "@/assets/sport-tabletennis.jpg";
+import { useEffect } from "react";
+import skatingImage from "@/assets/skating-focus.jpg";
 
 const sportsData: Record<string, {
   title: string;
@@ -27,7 +23,7 @@ const sportsData: Record<string, {
   badminton: {
     title: "Badminton",
     tagline: "Master the court with precision and power",
-    image: sportBadminton,
+    image: "https://images.unsplash.com/photo-1626224583764-f87db24ac4ea?w=800",
     description: "Our badminton program covers everything from basic footwork and grip techniques to advanced smash strategies and competitive match play.",
     benefits: ["Improved reflexes and agility", "Full body cardiovascular workout", "Strategic thinking development", "Social and competitive play", "Professional tournament preparation"],
     details: ["Beginner to advanced level training available", "Focus on singles and doubles strategy", "Footwork drills, smash techniques, and net play", "Regular practice matches and friendly tournaments", "Equipment guidance and racket selection advice"],
@@ -42,7 +38,7 @@ const sportsData: Record<string, {
   yoga: {
     title: "Yoga",
     tagline: "Find balance, strength, and inner peace",
-    image: sportYoga,
+    image: "https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?w=800",
     description: "Our yoga program blends traditional asanas with modern wellness practices. From Hatha to Vinyasa flow, we offer classes for all levels.",
     benefits: ["Enhanced flexibility and balance", "Stress relief and mental clarity", "Core strength development", "Better posture and alignment", "Mindfulness and meditation"],
     details: ["Hatha, Vinyasa, and Power Yoga sessions", "Breathwork and pranayama techniques", "Suitable for all ages and fitness levels", "Morning and evening batches available", "Special sessions for stress management"],
@@ -57,7 +53,7 @@ const sportsData: Record<string, {
   karate: {
     title: "Karate",
     tagline: "Discipline, strength, and self-defense mastery",
-    image: sportKarate,
+    image: "https://images.unsplash.com/photo-1555597673-b21d5c935865?w=800",
     description: "Learn traditional Shotokan karate from experienced martial artists. Our program covers kata, kumite, and self-defense techniques.",
     benefits: ["Self-defense skills", "Improved discipline and focus", "Physical conditioning", "Belt progression system", "Competition preparation"],
     details: ["Traditional Shotokan and Wado-Ryu styles", "Belt grading from white to black belt", "Kata, kumite, and self-defense modules", "Children and adult batches", "Competition coaching for state and national levels"],
@@ -72,7 +68,7 @@ const sportsData: Record<string, {
   skating: {
     title: "Skating",
     tagline: "Glide, spin, and conquer the rink",
-    image: sportSkating,
+    image: skatingImage,
     description: "From inline skating to roller skating, our program teaches balance, tricks, and safety. Perfect for beginners and experienced skaters.",
     benefits: ["Balance and coordination", "Lower body strength", "Cardiovascular fitness", "Trick progression", "Outdoor fitness activity"],
     details: ["Inline and quad roller skating programs", "Safety-first approach with protective gear guidance", "Speed skating and freestyle techniques", "Weekend outdoor skating sessions", "Fun group activities and skating games"],
@@ -87,7 +83,7 @@ const sportsData: Record<string, {
   swimming: {
     title: "Swimming",
     tagline: "Dive in and make waves",
-    image: sportSwimming,
+    image: "https://images.unsplash.com/photo-1530549387789-4c1017266635?w=800",
     description: "Our swimming program covers all strokes and techniques from beginner water safety to competitive swimming.",
     benefits: ["Full body workout", "Water safety skills", "All four competitive strokes", "Endurance building", "Low-impact exercise"],
     details: ["Learn freestyle, backstroke, breaststroke, and butterfly", "Water safety and survival techniques", "Lap swimming and endurance training", "Age-appropriate batches for kids and adults", "Pool facilities with trained lifeguards"],
@@ -102,7 +98,7 @@ const sportsData: Record<string, {
   "table-tennis": {
     title: "Table Tennis",
     tagline: "Speed, spin, and precision at the table",
-    image: sportTabletennis,
+    image: "https://images.unsplash.com/photo-1611251135345-18c56206b863?w=800",
     description: "Master the fast-paced world of table tennis with our expert coaching. Learn serves, spins, footwork, and match strategy.",
     benefits: ["Lightning-fast reflexes", "Hand-eye coordination", "Strategic game play", "Mental sharpness", "Social sport activity"],
     details: ["Forehand, backhand, and serve mastery", "Spin techniques and counter-spin strategies", "Footwork and positioning drills", "Match play and tournament simulation", "Equipment selection and table setup guidance"],
@@ -120,6 +116,10 @@ const SportDetail = () => {
   const { slug } = useParams<{ slug: string }>();
   const navigate = useNavigate();
   const sport = sportsData[slug || ""];
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [slug]);
 
   if (!sport) {
     return (
