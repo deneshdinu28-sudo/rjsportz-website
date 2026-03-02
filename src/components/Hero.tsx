@@ -50,8 +50,7 @@ const Hero = () => {
           </h1>
           
           <p className="text-lg md:text-xl mb-10 text-muted-foreground max-w-2xl mx-auto leading-relaxed">
-            Professional multi-sport coaching in badminton, yoga, karate, skating, swimming & table tennis. 
-            Expert training delivered at your doorstep.
+            Professional coaching in badminton, yoga, karate, skating, swimming & table tennis — delivered right to your apartment, community clubhouse, or society grounds. No travel, no hassle.
           </p>
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
