@@ -60,6 +60,9 @@ const Contact = () => {
                   <option>Skating</option>
                   <option>Swimming</option>
                   <option>Table Tennis</option>
+                  <option>Football</option>
+                  <option>Basketball</option>
+                  <option>Zumba</option>
                 </select>
               </div>
               <div>
