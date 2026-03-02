@@ -10,6 +10,9 @@ const Footer = () => {
     { name: "Skating", slug: "skating" },
     { name: "Swimming", slug: "swimming" },
     { name: "Table Tennis", slug: "table-tennis" },
+    { name: "Football", slug: "football" },
+    { name: "Basketball", slug: "basketball" },
+    { name: "Zumba", slug: "zumba" },
   ];
   const programs = ["Group Programs", "Personal Coaching", "Competition Prep", "Intensive Camps"];
 

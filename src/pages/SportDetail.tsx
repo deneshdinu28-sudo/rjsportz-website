@@ -109,6 +109,51 @@ const sportsData: Record<string, {
       { level: "Advanced", description: "Match tactics, counter-attacks, and tournament prep" },
     ],
     equipment: ["Table tennis paddle (guidance provided)", "TT balls (provided)", "Comfortable sportswear", "Non-marking indoor shoes"],
+  },
+  football: {
+    title: "Football",
+    tagline: "Teamwork, skill, and passion on the field",
+    image: "https://images.unsplash.com/photo-1553778263-73a83bab9b0c?w=800",
+    description: "Our football program develops technical skills, tactical awareness, and team play. From dribbling fundamentals to match-day strategies, we train players to compete at every level.",
+    benefits: ["Cardiovascular endurance", "Teamwork and communication", "Ball control and dribbling", "Tactical thinking", "Leadership development"],
+    details: ["Dribbling, passing, and shooting drills", "Positional play and formation tactics", "Set-piece training and game scenarios", "Small-sided games and scrimmages", "Fitness conditioning for match readiness"],
+    ageGroups: ["Kids (5-10 years)", "Juniors (11-15 years)", "Teens & Adults (16+ years)", "Recreational weekend batches"],
+    trainingLevels: [
+      { level: "Beginner", description: "Ball control, basic passing, and movement" },
+      { level: "Intermediate", description: "Tactical play, shooting accuracy, and set pieces" },
+      { level: "Advanced", description: "Match strategy, competitive drills, and tournament prep" },
+    ],
+    equipment: ["Football boots (studs or turf)", "Shin guards", "Comfortable sportswear", "Football (provided during training)"],
+  },
+  basketball: {
+    title: "Basketball",
+    tagline: "Shoot, dribble, and dominate the court",
+    image: "https://images.unsplash.com/photo-1546519638-68e109498ffc?w=800",
+    description: "Our basketball program covers shooting mechanics, dribbling drills, defensive strategies, and game intelligence. Train to play smarter and stronger on the court.",
+    benefits: ["Height and agility development", "Hand-eye coordination", "Team strategy and IQ", "Endurance and stamina", "Competitive match experience"],
+    details: ["Shooting form and free throw practice", "Dribbling handles and crossover drills", "Defensive stance and rebounding techniques", "Pick-and-roll and fast break strategies", "3v3 and 5v5 game simulations"],
+    ageGroups: ["Kids (6-11 years)", "Teens (12-17 years)", "Adults (18+ years)", "Open recreational batches"],
+    trainingLevels: [
+      { level: "Beginner", description: "Dribbling basics, layups, and passing fundamentals" },
+      { level: "Intermediate", description: "Jump shots, defensive drills, and team plays" },
+      { level: "Advanced", description: "Game film analysis, advanced tactics, and competition prep" },
+    ],
+    equipment: ["Basketball shoes (non-marking)", "Comfortable sportswear", "Basketball (provided)", "Water bottle"],
+  },
+  zumba: {
+    title: "Zumba",
+    tagline: "Dance your way to fitness",
+    image: "https://images.unsplash.com/photo-1524594152303-9fd13543fe6e?w=800",
+    description: "Our Zumba classes combine high-energy Latin dance moves with heart-pumping cardio. A fun, full-body workout that feels more like a dance party than exercise.",
+    benefits: ["Calorie burning and weight management", "Improved coordination and rhythm", "Stress relief and mood boost", "Full body toning", "Social and fun group activity"],
+    details: ["Latin-inspired dance fitness routines", "Mix of salsa, merengue, cumbia, and reggaeton", "Low-impact and high-impact options", "Morning and evening batch timings", "No dance experience required"],
+    ageGroups: ["Teens (13-17 years)", "Adults (18-50 years)", "Seniors (50+ years)", "Women-only batches available"],
+    trainingLevels: [
+      { level: "Beginner", description: "Basic steps, rhythm building, and easy routines" },
+      { level: "Intermediate", description: "Complex choreography, faster tempo, and endurance" },
+      { level: "Advanced", description: "High-intensity intervals, toning moves, and performance routines" },
+    ],
+    equipment: ["Comfortable workout shoes", "Breathable sportswear", "Water bottle", "Towel"],
   }
 };
 

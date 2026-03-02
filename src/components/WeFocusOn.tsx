@@ -42,6 +42,24 @@ const WeFocusOn = () => {
       slug: "table-tennis",
       image: "https://images.unsplash.com/photo-1611251135345-18c56206b863?w=800",
       description: "Master the art of table tennis with professional guidance"
+    },
+    {
+      title: "Football",
+      slug: "football",
+      image: "https://images.unsplash.com/photo-1553778263-73a83bab9b0c?w=800",
+      description: "Build teamwork, endurance, and ball control with expert football coaching"
+    },
+    {
+      title: "Basketball",
+      slug: "basketball",
+      image: "https://images.unsplash.com/photo-1546519638-68e109498ffc?w=800",
+      description: "Develop shooting, dribbling, and court awareness with professional training"
+    },
+    {
+      title: "Zumba",
+      slug: "zumba",
+      image: "https://images.unsplash.com/photo-1524594152303-9fd13543fe6e?w=800",
+      description: "High-energy dance fitness combining Latin rhythms with cardio workouts"
     }
   ];
 
