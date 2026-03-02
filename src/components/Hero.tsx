@@ -39,7 +39,7 @@ const Hero = () => {
             animate={{ opacity: 1 }}
             transition={{ delay: 0.3 }}
           >
-            Your Trusted Sports Partner
+            Expert Coaching At Your Doorstep
           </motion.p>
           
           <h1 className="text-5xl md:text-7xl lg:text-8xl font-black mb-6 leading-[0.9] tracking-tight">
