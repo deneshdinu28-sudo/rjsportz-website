@@ -10,7 +10,7 @@ const About = () => {
   const achievements = [
     { number: "15+", label: "Years Experience" },
     { number: "1000+", label: "Students Trained" },
-    { number: "6+", label: "Sports Offered" },
+    { number: "9+", label: "Sports Offered" },
     { number: "50+", label: "Certified Coaches" }
   ];
 
@@ -38,7 +38,7 @@ const About = () => {
             </p>
             
             <p className="text-lg text-muted-foreground mb-6 leading-relaxed">
-              Our approach focuses on holistic development through badminton, yoga, karate, skating, swimming, and table tennis. We bring expert coaching directly to your doorstep, making professional training accessible and convenient for everyone.
+              Our approach focuses on holistic development through badminton, yoga, karate, skating, swimming, table tennis, football, basketball, and zumba. We bring expert coaching directly to your doorstep, making professional training accessible and convenient for everyone.
             </p>
             
             <Link to="/about">

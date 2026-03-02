@@ -23,7 +23,7 @@ const Footer = () => {
           <div>
             <img src={logo} alt="RJ Sportz" className="h-14 object-contain mb-4" />
             <p className="text-muted-foreground mb-6">
-              Professional multi-sport training delivered at your doorstep. Expert coaching in badminton, yoga, karate, skating, swimming, and table tennis.
+              Professional multi-sport training delivered at your doorstep. Expert coaching in badminton, yoga, karate, skating, swimming, table tennis, football, basketball, and zumba.
             </p>
             <div className="flex gap-4">
               {[Facebook, Instagram, Youtube, Linkedin].map((Icon, i) => (
