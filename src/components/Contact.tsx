@@ -49,7 +49,7 @@ const Contact = () => {
               </div>
               <div>
                 <label className="block text-sm font-medium text-foreground mb-2">Phone Number</label>
-                <Input type="tel" placeholder="+1 (555) 123-4567" />
+                <Input type="tel" placeholder="+91 88700 18565" />
               </div>
               <div>
                 <label className="block text-sm font-medium text-foreground mb-2">Sport Interest</label>
