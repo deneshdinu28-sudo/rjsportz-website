@@ -43,6 +43,7 @@ const Navigation = () => {
             <Link to="/about" className="text-foreground hover:text-primary transition-colors">About</Link>
             <button onClick={() => goToSection('services')} className="text-foreground hover:text-primary transition-colors">Programs</button>
             <Link to="/feedbacks" onClick={() => setIsOpen(false)} className="text-foreground hover:text-primary transition-colors">Testimonials</Link>
+            <Link to="/hiring" className="text-foreground hover:text-primary transition-colors">Hiring</Link>
             <button onClick={() => goToSection('contact')} className="text-foreground hover:text-primary transition-colors">Contact</button>
             <Button onClick={() => goToSection('contact')} variant="default">Book Session</Button>
           </div>
