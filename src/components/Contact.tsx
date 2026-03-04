@@ -10,8 +10,8 @@ const Contact = () => {
 
   const contactInfo = [
     { icon: MapPin, title: "Location", details: ["Bengaluru, Karnataka", "Training at your preferred venue"] },
-    { icon: Phone, title: "Phone", details: ["+1 (555) 123-4567", "Available 9 AM - 8 PM"] },
-    { icon: Mail, title: "Email", details: ["contact@rjsports.com", "Quick response guaranteed"] },
+    { icon: Phone, title: "Phone", details: ["+91 88700 18565", "Available 9 AM - 8 PM"] },
+    { icon: Mail, title: "Email", details: ["rjsportzofficial1@gmail.com", "Quick response guaranteed"] },
     { icon: Clock, title: "Training Hours", details: ["Mon-Fri: 6 AM - 10 PM", "Sat-Sun: 8 AM - 8 PM"] }
   ];
 
@@ -49,7 +49,7 @@ const Contact = () => {
               </div>
               <div>
                 <label className="block text-sm font-medium text-foreground mb-2">Phone Number</label>
-                <Input type="tel" placeholder="+1 (555) 123-4567" />
+                <Input type="tel" placeholder="+91 88700 18565" />
               </div>
               <div>
                 <label className="block text-sm font-medium text-foreground mb-2">Sport Interest</label>
