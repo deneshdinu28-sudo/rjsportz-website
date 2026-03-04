@@ -8,6 +8,7 @@ import Index from "./pages/Index";
 import Feedbacks from "./pages/Feedbacks";
 import AboutUs from "./pages/AboutUs";
 import SportDetail from "./pages/SportDetail";
+import Hiring from "./pages/Hiring";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
