@@ -75,10 +75,13 @@ const Footer = () => {
           </div>
         </div>
 
-        <div className="border-t border-border mt-12 pt-8 text-center">
+          <div className="border-t border-border mt-12 pt-8 flex flex-col sm:flex-row items-center justify-between gap-4">
           <p className="text-muted-foreground">
             © {new Date().getFullYear()} RJ Sportz. All rights reserved.
           </p>
+          <Link to="/hiring" className="text-primary hover:text-primary/80 font-medium transition-colors">
+            We're Hiring Coaches →
+          </Link>
         </div>
       </div>
     </footer>
