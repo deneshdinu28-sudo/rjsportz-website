@@ -122,7 +122,7 @@ const Hiring = () => {
         {/* Application Form */}
         <section className="py-16">
           <div className="container mx-auto px-6 max-w-3xl">
-            <Card className="border-border/50">
+            <Card className="border-border/50 w-full">
               <CardHeader>
                 <CardTitle className="text-2xl md:text-3xl font-bold text-center text-foreground">
                   Coach Application <span className="text-primary">Form</span>
