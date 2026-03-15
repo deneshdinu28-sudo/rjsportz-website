@@ -85,6 +85,7 @@ const Hiring = () => {
   if (isSubmitted) {
     return (
       <div className="min-h-screen">
+        <SEO title="Application Received - RJ Sportz" description="Your coaching application has been submitted to RJ Sportz." path="/hiring" />
         <Navigation />
         <main className="pt-24 pb-20">
           <div className="container mx-auto px-6 flex flex-col items-center justify-center min-h-[60vh] text-center">
