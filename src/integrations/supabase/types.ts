@@ -14,7 +14,81 @@ export type Database = {
   }
   public: {
     Tables: {
-      [_ in never]: never
+      coach_applications: {
+        Row: {
+          about: string | null
+          availability: string | null
+          certifications: string | null
+          created_at: string
+          email: string
+          experience: string
+          full_name: string
+          id: string
+          location: string | null
+          phone: string
+          resume_url: string | null
+          sport: string
+        }
+        Insert: {
+          about?: string | null
+          availability?: string | null
+          certifications?: string | null
+          created_at?: string
+          email: string
+          experience: string
+          full_name: string
+          id?: string
+          location?: string | null
+          phone: string
+          resume_url?: string | null
+          sport: string
+        }
+        Update: {
+          about?: string | null
+          availability?: string | null
+          certifications?: string | null
+          created_at?: string
+          email?: string
+          experience?: string
+          full_name?: string
+          id?: string
+          location?: string | null
+          phone?: string
+          resume_url?: string | null
+          sport?: string
+        }
+        Relationships: []
+      }
+      contact_submissions: {
+        Row: {
+          created_at: string
+          email: string
+          full_name: string
+          id: string
+          message: string | null
+          phone: string
+          sport_interest: string
+        }
+        Insert: {
+          created_at?: string
+          email: string
+          full_name: string
+          id?: string
+          message?: string | null
+          phone: string
+          sport_interest: string
+        }
+        Update: {
+          created_at?: string
+          email?: string
+          full_name?: string
+          id?: string
+          message?: string | null
+          phone?: string
+          sport_interest?: string
+        }
+        Relationships: []
+      }
     }
     Views: {
       [_ in never]: never
