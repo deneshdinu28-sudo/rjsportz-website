@@ -8,6 +8,7 @@ import { Textarea } from "@/components/ui/textarea";
 import { useScrollAnimation } from "@/hooks/useScrollAnimation";
 import { useToast } from "@/hooks/use-toast";
 import { Briefcase, Users, Trophy, Heart, Upload, CheckCircle } from "lucide-react";
+import { supabase } from "@/integrations/supabase/client";
 
 const Hiring = () => {
   const { ref, isVisible } = useScrollAnimation();
