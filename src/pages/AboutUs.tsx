@@ -9,13 +9,6 @@ import founderImage from "@/assets/founder-ranjith.jpg";
 import coFounderImage from "@/assets/co-founder.jpg";
 
 const AboutUs = () => {
-  return (
-    <div className="min-h-screen">
-      <SEO
-        title="About RJ Sportz - Our Story & Mission"
-        description="Learn about RJ Sportz, Bengaluru's trusted at-home sports academy. Meet our founders and discover our mission to make sports accessible to all."
-        path="/about"
-      />
   const staff = [
     {
       name: "Ranjit Subramaniyam",
