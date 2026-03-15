@@ -42,14 +42,36 @@ const Hiring = () => {
     }
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const [isSubmitting, setIsSubmitting] = useState(false);
+
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     if (!formData.fullName || !formData.email || !formData.phone || !formData.sport || !formData.experience) {
       toast({ title: "Missing fields", description: "Please fill in all required fields.", variant: "destructive" });
       return;
     }
-    setIsSubmitted(true);
-    toast({ title: "Application Submitted!", description: "We'll review your application and get back to you soon." });
+    setIsSubmitting(true);
+    try {
+      const { error } = await supabase.from("coach_applications").insert({
+        full_name: formData.fullName,
+        email: formData.email,
+        phone: formData.phone,
+        sport: formData.sport,
+        experience: formData.experience,
+        certifications: formData.certifications || null,
+        location: formData.location || null,
+        availability: formData.availability || null,
+        about: formData.about || null,
+      });
+      if (error) throw error;
+      setIsSubmitted(true);
+      toast({ title: "Application Submitted!", description: "We'll review your application and get back to you soon." });
+    } catch (error) {
+      console.error("Hiring form error:", error);
+      toast({ title: "Error", description: "Something went wrong. Please try again.", variant: "destructive" });
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   const perks = [
