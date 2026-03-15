@@ -9,17 +9,15 @@ import Footer from "@/components/Footer";
 import SEO from "@/components/SEO";
 
 const Feedbacks = () => {
+  const navigate = useNavigate();
+
   return (
-    <div className="min-h-screen">
+    <div className="min-h-screen bg-gradient-to-b from-background to-secondary/30">
       <SEO
         title="RJ Sportz Reviews - What Our Students Say"
         description="Read testimonials from RJ Sportz students. Hear how our expert coaches helped them excel in badminton, yoga, karate, skating, swimming & more."
         path="/feedbacks"
       />
-  const navigate = useNavigate();
-
-  return (
-    <div className="min-h-screen bg-gradient-to-b from-background to-secondary/30">
       <Navigation />
       <section className="pt-24 py-20">
         <div className="container mx-auto px-6">

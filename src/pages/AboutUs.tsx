@@ -44,6 +44,11 @@ const AboutUs = () => {
 
   return (
     <div className="min-h-screen bg-background">
+      <SEO
+        title="About RJ Sportz - Our Story & Mission"
+        description="Learn about RJ Sportz, Bengaluru's trusted at-home sports academy. Meet our founders and discover our mission to make sports accessible to all."
+        path="/about"
+      />
       <Navigation />
 
       <main className="pt-24 py-20">
