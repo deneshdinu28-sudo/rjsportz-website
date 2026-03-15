@@ -9,6 +9,7 @@ import { useScrollAnimation } from "@/hooks/useScrollAnimation";
 import { useToast } from "@/hooks/use-toast";
 import { Briefcase, Users, Trophy, Heart, Upload, CheckCircle } from "lucide-react";
 import { supabase } from "@/integrations/supabase/client";
+import SEO from "@/components/SEO";
 
 const Hiring = () => {
   const { ref, isVisible } = useScrollAnimation();
@@ -84,6 +85,7 @@ const Hiring = () => {
   if (isSubmitted) {
     return (
       <div className="min-h-screen">
+        <SEO title="Application Received - RJ Sportz" description="Your coaching application has been submitted to RJ Sportz." path="/hiring" />
         <Navigation />
         <main className="pt-24 pb-20">
           <div className="container mx-auto px-6 flex flex-col items-center justify-center min-h-[60vh] text-center">
@@ -106,6 +108,7 @@ const Hiring = () => {
 
   return (
     <div className="min-h-screen">
+      <SEO title="Join Our Coaching Team - RJ Sportz Careers" description="Apply to become a sports coach at RJ Sportz. We're hiring passionate coaches for badminton, yoga, karate, skating, swimming & more in Bengaluru." path="/hiring" />
       <Navigation />
       <main className="pt-24 pb-20">
         {/* Hero */}
