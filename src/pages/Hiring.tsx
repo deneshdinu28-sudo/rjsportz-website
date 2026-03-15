@@ -252,8 +252,8 @@ const Hiring = () => {
                     </div>
                   </div>
 
-                  <Button type="submit" className="w-full" size="lg">
-                    Submit Application
+                  <Button type="submit" className="w-full" size="lg" disabled={isSubmitting}>
+                    {isSubmitting ? "Submitting..." : "Submit Application"}
                   </Button>
                 </form>
               </CardContent>
