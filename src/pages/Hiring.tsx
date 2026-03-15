@@ -108,6 +108,7 @@ const Hiring = () => {
 
   return (
     <div className="min-h-screen">
+      <SEO title="Join Our Coaching Team - RJ Sportz Careers" description="Apply to become a sports coach at RJ Sportz. We're hiring passionate coaches for badminton, yoga, karate, skating, swimming & more in Bengaluru." path="/hiring" />
       <Navigation />
       <main className="pt-24 pb-20">
         {/* Hero */}
