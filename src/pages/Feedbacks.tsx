@@ -6,8 +6,16 @@ import { useNavigate } from "react-router-dom";
 import { allTestimonials } from "@/data/testimonials";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
+import SEO from "@/components/SEO";
 
 const Feedbacks = () => {
+  return (
+    <div className="min-h-screen">
+      <SEO
+        title="RJ Sportz Reviews - What Our Students Say"
+        description="Read testimonials from RJ Sportz students. Hear how our expert coaches helped them excel in badminton, yoga, karate, skating, swimming & more."
+        path="/feedbacks"
+      />
   const navigate = useNavigate();
 
   return (

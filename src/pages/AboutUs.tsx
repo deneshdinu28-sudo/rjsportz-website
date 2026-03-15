@@ -3,11 +3,19 @@ import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 import { Target, Eye, Trophy } from "lucide-react";
 import Navigation from "@/components/Navigation";
+import SEO from "@/components/SEO";
 
 import founderImage from "@/assets/founder-ranjith.jpg";
 import coFounderImage from "@/assets/co-founder.jpg";
 
 const AboutUs = () => {
+  return (
+    <div className="min-h-screen">
+      <SEO
+        title="About RJ Sportz - Our Story & Mission"
+        description="Learn about RJ Sportz, Bengaluru's trusted at-home sports academy. Meet our founders and discover our mission to make sports accessible to all."
+        path="/about"
+      />
   const staff = [
     {
       name: "Ranjit Subramaniyam",
