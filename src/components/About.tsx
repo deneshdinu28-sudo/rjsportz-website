@@ -9,10 +9,10 @@ const About = () => {
   const { ref, isVisible } = useScrollAnimation();
 
   const achievements = [
-    { icon: Clock, label: "Years of Experience" },
-    { icon: Users, label: "Expert Coaches" },
-    { icon: Trophy, label: "Multi-Sport Training" },
-    { icon: Award, label: "Certified Programs" }
+    { icon: Clock, label: "Flexible Scheduling" },
+    { icon: Users, label: "All Age Groups" },
+    { icon: Trophy, label: "9 Sports Disciplines" },
+    { icon: Award, label: "BWF Certified Coaches" }
   ];
 
   return (
