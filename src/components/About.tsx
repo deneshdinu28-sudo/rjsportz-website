@@ -9,10 +9,10 @@ const About = () => {
   const { ref, isVisible } = useScrollAnimation();
 
   const achievements = [
-    { number: "15+", label: "Years Experience" },
-    { number: "1000+", label: "Students Trained" },
-    { number: "9+", label: "Sports Offered" },
-    { number: "50+", label: "Certified Coaches" }
+    { icon: Clock, label: "Years of Experience" },
+    { icon: Users, label: "Expert Coaches" },
+    { icon: Trophy, label: "Multi-Sport Training" },
+    { icon: Award, label: "Certified Programs" }
   ];
 
   return (
