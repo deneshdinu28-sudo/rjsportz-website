@@ -1,6 +1,7 @@
 import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
+import { Clock, Users, Trophy, Award } from "lucide-react";
 import { useScrollAnimation } from "@/hooks/useScrollAnimation";
 import coachAbout from "@/assets/coach-about.jpg";
 
