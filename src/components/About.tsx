@@ -1,6 +1,7 @@
 import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
+import { Clock, Users, Trophy, Award } from "lucide-react";
 import { useScrollAnimation } from "@/hooks/useScrollAnimation";
 import coachAbout from "@/assets/coach-about.jpg";
 
@@ -8,10 +9,10 @@ const About = () => {
   const { ref, isVisible } = useScrollAnimation();
 
   const achievements = [
-    { number: "15+", label: "Years Experience" },
-    { number: "1000+", label: "Students Trained" },
-    { number: "9+", label: "Sports Offered" },
-    { number: "50+", label: "Certified Coaches" }
+    { icon: Clock, label: "Years of Experience" },
+    { icon: Users, label: "Expert Coaches" },
+    { icon: Trophy, label: "Multi-Sport Training" },
+    { icon: Award, label: "Certified Programs" }
   ];
 
   return (
@@ -50,10 +51,10 @@ const About = () => {
             <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
               {achievements.map((achievement, index) => (
                 <Card key={index} className="p-4 text-center border-border/50 hover:shadow-[0_0_20px_hsl(105_98%_51%/0.15)] transition-all duration-300">
-                  <div className="text-2xl font-bold text-primary mb-1">
-                    {achievement.number}
+                  <div className="flex justify-center mb-2">
+                    <achievement.icon className="w-8 h-8 text-primary" />
                   </div>
-                  <div className="text-sm text-muted-foreground">
+                  <div className="text-sm text-muted-foreground font-medium">
                     {achievement.label}
                   </div>
                 </Card>
