@@ -12,7 +12,7 @@ const About = () => {
     { icon: Clock, label: "Flexible Scheduling" },
     { icon: Users, label: "All Age Groups" },
     { icon: Trophy, label: "9 Sports Disciplines" },
-    { icon: Award, label: "BWF Certified Coaches" }
+    { icon: Award, label: "Certified Coaches" }
   ];
 
   return (
