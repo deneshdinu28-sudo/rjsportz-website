@@ -75,7 +75,7 @@ const AboutUs = () => {
               <div className="grid lg:grid-cols-2 gap-8 items-start">
                 <div>
                   <img 
-                    src={founderImage} 
+                    src={founderImage.url} 
                     alt="Ranjit Subramaniyam - Founder of RJ Sportz"
                     className="rounded-2xl shadow-lg w-full h-[350px] object-cover"
                   />
