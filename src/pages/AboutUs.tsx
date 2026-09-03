@@ -77,7 +77,7 @@ const AboutUs = () => {
                   <img 
                     src={founderImage.url} 
                     alt="Ranjit Subramaniyam - Founder of RJ Sportz"
-                    className="rounded-2xl shadow-lg w-full h-[350px] object-cover"
+                    className="rounded-2xl shadow-lg w-full aspect-[5/7] object-contain bg-muted"
                   />
                 </div>
                 
@@ -114,7 +114,7 @@ const AboutUs = () => {
                     <img 
                       src={member.image} 
                       alt={member.name}
-                      className="w-full h-[300px] object-cover"
+                      className="w-full aspect-[5/7] object-contain bg-muted"
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-background/80 to-transparent"></div>
                     <div className="absolute bottom-0 left-0 right-0 p-6">
