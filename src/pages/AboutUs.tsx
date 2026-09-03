@@ -5,7 +5,7 @@ import { Target, Eye, Trophy } from "lucide-react";
 import Navigation from "@/components/Navigation";
 import SEO from "@/components/SEO";
 
-import founderImage from "@/assets/founder-ranjith.jpg";
+import founderImage from "@/assets/ranjit-subramaniyam.jpeg.asset.json";
 import coFounderImage from "@/assets/co-founder.jpg";
 
 const AboutUs = () => {
