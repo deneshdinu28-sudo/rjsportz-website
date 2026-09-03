@@ -5,7 +5,7 @@ import { Target, Eye, Trophy } from "lucide-react";
 import Navigation from "@/components/Navigation";
 import SEO from "@/components/SEO";
 
-import founderImage from "@/assets/founder-ranjith.jpg";
+import founderImage from "@/assets/ranjit-subramaniyam.jpeg.asset.json";
 import coFounderImage from "@/assets/co-founder.jpg";
 
 const AboutUs = () => {
@@ -13,7 +13,7 @@ const AboutUs = () => {
     {
       name: "Ranjit Subramaniyam",
        occupation: "Founder & Badminton Head Coach",
-      image: founderImage,
+      image: founderImage.url,
       description: "BWF Level 3 Certified Coach, Ranked #16 in India & #2 in State"
     },
     {
@@ -75,7 +75,7 @@ const AboutUs = () => {
               <div className="grid lg:grid-cols-2 gap-8 items-start">
                 <div>
                   <img 
-                    src={founderImage} 
+                    src={founderImage.url} 
                     alt="Ranjit Subramaniyam - Founder of RJ Sportz"
                     className="rounded-2xl shadow-lg w-full h-[350px] object-cover"
                   />
