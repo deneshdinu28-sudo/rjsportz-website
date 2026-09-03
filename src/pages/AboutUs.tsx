@@ -13,7 +13,7 @@ const AboutUs = () => {
     {
       name: "Ranjit Subramaniyam",
        occupation: "Founder & Badminton Head Coach",
-      image: founderImage,
+      image: founderImage.url,
       description: "BWF Level 3 Certified Coach, Ranked #16 in India & #2 in State"
     },
     {
