@@ -6,7 +6,7 @@ import Navigation from "@/components/Navigation";
 import SEO from "@/components/SEO";
 
 import founderImage from "@/assets/ranjit-subramaniyam.jpeg.asset.json";
-import coFounderImage from "@/assets/co-founder.jpg";
+import coFounderImage from "@/assets/rohit-subramaniyam.jpeg.asset.json";
 
 const AboutUs = () => {
   const staff = [
@@ -14,13 +14,13 @@ const AboutUs = () => {
       name: "Ranjit Subramaniyam",
        occupation: "Founder & Badminton Head Coach",
       image: founderImage.url,
-      description: "BWF Level 3 Certified Coach, Ranked #16 in India & #2 in State"
+       description: "Certified badminton coach dedicated to helping players grow with confidence"
     },
     {
        name: "Rohit Subramaniyam", 
-       occupation: "Co-Founder & Operations Lead",
-      image: coFounderImage,
-       description: "Leads business operations and helps build a welcoming training community"
+       occupation: "Co-Founder",
+      image: coFounderImage.url,
+       description: "Helps build a welcoming training community"
     }
   ];
 
