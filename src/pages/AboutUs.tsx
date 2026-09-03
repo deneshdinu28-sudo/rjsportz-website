@@ -12,15 +12,15 @@ const AboutUs = () => {
   const staff = [
     {
       name: "Ranjit Subramaniyam",
-      occupation: "Founder & Head Coach",
+       occupation: "Founder & Badminton Head Coach",
       image: founderImage,
       description: "BWF Level 3 Certified Coach, Ranked #16 in India & #2 in State"
     },
     {
-      name: "Priya Sharma", 
-      occupation: "Co-Founder & Yoga Instructor",
+       name: "Rohit Subramaniyam", 
+       occupation: "Co-Founder & Operations Lead",
       image: coFounderImage,
-      description: "Certified Yoga Instructor, Fitness Specialist"
+       description: "Leads business operations and helps build a welcoming training community"
     }
   ];
 
