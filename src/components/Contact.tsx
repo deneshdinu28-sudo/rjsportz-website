@@ -109,6 +109,7 @@ const Contact = () => {
                     <option>Zumba</option>
                     <option>Chess</option>
                     <option>Arts</option>
+                    <option>MMA & Kung Fu</option>
                   </select>
                 </div>
                 <div>

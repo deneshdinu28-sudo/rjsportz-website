@@ -64,14 +64,20 @@ const WeFocusOn = () => {
     {
       title: "Chess",
       slug: "chess",
-      image: "https://images.unsplash.com/photo-1758687126146-ff7ed4bbdb57?w=800",
+      image: "https://images.unsplash.com/photo-1758101308935-692ed18dad48?w=800",
       description: "Sharpen strategic thinking and focus through personalized chess coaching for all skill levels"
     },
     {
       title: "Arts",
       slug: "arts",
-      image: "https://images.unsplash.com/photo-1758522276267-b3472583e954?w=800",
+      image: "https://images.unsplash.com/photo-1512253080918-79cf0c2e0650?w=800",
       description: "Unlock creativity through guided drawing, painting, and craft sessions for every age"
+    },
+    {
+      title: "MMA & Kung Fu",
+      slug: "mma-kungfu",
+      image: "https://images.unsplash.com/photo-1514050566906-8d077bae7046?w=800",
+      description: "Build power, discipline, and real-world self-defense skills through dynamic MMA and traditional Kung Fu training"
     }
   ];
 
