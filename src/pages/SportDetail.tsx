@@ -158,7 +158,7 @@ const sportsData: Record<string, {
   chess: {
     title: "Chess",
     tagline: "Think ahead, play smart, win strategically",
-    image: "https://images.unsplash.com/photo-1758101308935-692ed18dad48?w=800",
+    image: "https://images.unsplash.com/photo-1505461296292-7d67beed10a2?w=800",
     description: "Our chess program builds strategic thinking, patience, and concentration through structured lessons covering openings, tactics, and endgame mastery. Suitable for absolute beginners through tournament-ready players.",
     benefits: ["Sharper analytical and critical thinking", "Improved concentration and patience", "Better decision-making under pressure", "Memory and pattern recognition development", "Tournament and competitive readiness"],
     details: ["One-on-one and small group coaching formats", "Opening theory, middlegame tactics, and endgame technique", "Puzzle-solving and calculation training", "Practice games with post-game analysis", "Preparation for school and district-level tournaments"],
@@ -173,7 +173,7 @@ const sportsData: Record<string, {
   arts: {
     title: "Arts",
     tagline: "Express, create, and discover your artistic voice",
-    image: "https://images.unsplash.com/photo-1512253080918-79cf0c2e0650?w=800",
+    image: "https://images.unsplash.com/photo-1503454537195-1dcabb73ffb9?w=800",
     description: "Our arts program nurtures creativity through drawing, painting, and mixed-media craft, guided by experienced instructors. Students explore different styles and techniques while building confidence in their own artistic expression.",
     benefits: ["Enhanced creativity and imagination", "Fine motor skill development", "Improved focus and patience", "Confidence in self-expression", "Exposure to diverse art forms and techniques"],
     details: ["Drawing, painting, and craft-based sessions", "Sketching fundamentals and color theory", "Mixed-media and creative exploration projects", "Portfolio building for young artists", "Showcase sessions to display student work"],
@@ -185,10 +185,10 @@ const sportsData: Record<string, {
     ],
     equipment: ["Drawing/painting supplies (provided during training)", "Sketchbook or canvas", "Apron or old clothing", "Personal art kit (optional, for take-home practice)"],
   },
-  "mma-kungfu": {
-    title: "MMA & Kung Fu",
+  "mma-kung-fu": {
+    title: "MMA-Kung Fu",
     tagline: "Strike, grapple, and master the art of combat",
-    image: "https://images.unsplash.com/photo-1514050566906-8d077bae7046?w=800",
+    image: "https://images.unsplash.com/photo-1607031767898-5f319512ff1e?w=800",
     description: "Learn discipline, self-defense, and strength-building through dynamic MMA and traditional Kung Fu training. Our expert coaches guide students of all ages in building confidence, technique, and physical fitness through structured martial arts practice.",
     benefits: ["Full-body strength and conditioning", "Real-world self-defense skills", "Improved discipline and mental toughness", "Enhanced flexibility and reflexes", "Confidence-building through skill progression"],
     details: ["Striking, kicks, and combination drills", "Grappling and ground control basics", "Traditional Kung Fu forms (taolu) and stances", "Pad work and controlled sparring sessions", "Belt/rank progression and grading opportunities"],
