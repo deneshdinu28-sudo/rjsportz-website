@@ -158,7 +158,7 @@ const sportsData: Record<string, {
   chess: {
     title: "Chess",
     tagline: "Think ahead, play smart, win strategically",
-    image: "https://images.unsplash.com/photo-1529699211952-734e80c4d42b?w=800",
+    image: "https://images.unsplash.com/photo-1758687126146-ff7ed4bbdb57?w=800",
     description: "Our chess program builds strategic thinking, patience, and concentration through structured lessons covering openings, tactics, and endgame mastery. Suitable for absolute beginners through tournament-ready players.",
     benefits: ["Sharper analytical and critical thinking", "Improved concentration and patience", "Better decision-making under pressure", "Memory and pattern recognition development", "Tournament and competitive readiness"],
     details: ["One-on-one and small group coaching formats", "Opening theory, middlegame tactics, and endgame technique", "Puzzle-solving and calculation training", "Practice games with post-game analysis", "Preparation for school and district-level tournaments"],
@@ -173,7 +173,7 @@ const sportsData: Record<string, {
   arts: {
     title: "Arts",
     tagline: "Express, create, and discover your artistic voice",
-    image: "https://images.unsplash.com/photo-1513364776144-60967b0f800f?w=800",
+    image: "https://images.unsplash.com/photo-1758522276267-b3472583e954?w=800",
     description: "Our arts program nurtures creativity through drawing, painting, and mixed-media craft, guided by experienced instructors. Students explore different styles and techniques while building confidence in their own artistic expression.",
     benefits: ["Enhanced creativity and imagination", "Fine motor skill development", "Improved focus and patience", "Confidence in self-expression", "Exposure to diverse art forms and techniques"],
     details: ["Drawing, painting, and craft-based sessions", "Sketching fundamentals and color theory", "Mixed-media and creative exploration projects", "Portfolio building for young artists", "Showcase sessions to display student work"],

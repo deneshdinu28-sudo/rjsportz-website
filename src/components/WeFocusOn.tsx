@@ -64,13 +64,13 @@ const WeFocusOn = () => {
     {
       title: "Chess",
       slug: "chess",
-      image: "https://images.unsplash.com/photo-1529699211952-734e80c4d42b?w=800",
+      image: "https://images.unsplash.com/photo-1758687126146-ff7ed4bbdb57?w=800",
       description: "Sharpen strategic thinking and focus through personalized chess coaching for all skill levels"
     },
     {
       title: "Arts",
       slug: "arts",
-      image: "https://images.unsplash.com/photo-1513364776144-60967b0f800f?w=800",
+      image: "https://images.unsplash.com/photo-1758522276267-b3472583e954?w=800",
       description: "Unlock creativity through guided drawing, painting, and craft sessions for every age"
     }
   ];
