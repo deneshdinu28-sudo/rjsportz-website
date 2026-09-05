@@ -154,6 +154,36 @@ const sportsData: Record<string, {
       { level: "Advanced", description: "High-intensity intervals, toning moves, and performance routines" },
     ],
     equipment: ["Comfortable workout shoes", "Breathable sportswear", "Water bottle", "Towel"],
+  },
+  chess: {
+    title: "Chess",
+    tagline: "Think ahead, play smart, win strategically",
+    image: "https://images.unsplash.com/photo-1529699211952-734e80c4d42b?w=800",
+    description: "Our chess program builds strategic thinking, patience, and concentration through structured lessons covering openings, tactics, and endgame mastery. Suitable for absolute beginners through tournament-ready players.",
+    benefits: ["Sharper analytical and critical thinking", "Improved concentration and patience", "Better decision-making under pressure", "Memory and pattern recognition development", "Tournament and competitive readiness"],
+    details: ["One-on-one and small group coaching formats", "Opening theory, middlegame tactics, and endgame technique", "Puzzle-solving and calculation training", "Practice games with post-game analysis", "Preparation for school and district-level tournaments"],
+    ageGroups: ["Kids (5-10 years)", "Juniors (11-16 years)", "Adults (17+ years)", "Competitive tournament track available"],
+    trainingLevels: [
+      { level: "Beginner", description: "Piece movement, basic rules, and simple checkmates" },
+      { level: "Intermediate", description: "Opening principles, tactical patterns, and basic endgames" },
+      { level: "Advanced", description: "Deep calculation, positional play, and tournament strategy" },
+    ],
+    equipment: ["Chess set (provided during training)", "Notebook for recording games", "Chess clock (for advanced practice)", "Comfortable seating space"],
+  },
+  arts: {
+    title: "Arts",
+    tagline: "Express, create, and discover your artistic voice",
+    image: "https://images.unsplash.com/photo-1513364776144-60967b0f800f?w=800",
+    description: "Our arts program nurtures creativity through drawing, painting, and mixed-media craft, guided by experienced instructors. Students explore different styles and techniques while building confidence in their own artistic expression.",
+    benefits: ["Enhanced creativity and imagination", "Fine motor skill development", "Improved focus and patience", "Confidence in self-expression", "Exposure to diverse art forms and techniques"],
+    details: ["Drawing, painting, and craft-based sessions", "Sketching fundamentals and color theory", "Mixed-media and creative exploration projects", "Portfolio building for young artists", "Showcase sessions to display student work"],
+    ageGroups: ["Kids (5-10 years)", "Teens (11-17 years)", "Adults (18+ years)", "Family art sessions available"],
+    trainingLevels: [
+      { level: "Beginner", description: "Basic shapes, shading, and color mixing" },
+      { level: "Intermediate", description: "Composition, perspective, and varied mediums" },
+      { level: "Advanced", description: "Personal style development and portfolio projects" },
+    ],
+    equipment: ["Drawing/painting supplies (provided during training)", "Sketchbook or canvas", "Apron or old clothing", "Personal art kit (optional, for take-home practice)"],
   }
 };
 
