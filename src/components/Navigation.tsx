@@ -32,7 +32,11 @@ const Navigation = () => {
     <nav className={`fixed top-0 w-full z-50 transition-all duration-300 ${
       isScrolled ? 'bg-background/95 backdrop-blur-sm shadow-lg border-b border-border/50' : 'bg-transparent'
     }`}>
-      <div className="container mx-auto px-6">
+      <div
+        className="absolute top-0 left-0 right-0 h-16 bg-gradient-to-b from-black/40 to-transparent pointer-events-none"
+        aria-hidden="true"
+      ></div>
+      <div className="container mx-auto px-6 relative z-10">
         <div className="flex items-center justify-between h-16">
           <Link to="/" className="flex items-center">
             <img src={logo} alt="RJ Sportz" className="h-14 object-contain" />
