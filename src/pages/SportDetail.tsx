@@ -236,7 +236,7 @@ const SportDetail = () => {
       {/* Hero */}
       <section className="relative h-[60vh] flex items-end">
         <div className="absolute inset-0">
-          <img src={sport.image} alt={sport.title} className="w-full h-full object-cover opacity-30" />
+          <img src={sport.image} alt={sport.title} className="w-full h-full object-cover" />
           <div className="absolute inset-0 bg-gradient-to-t from-background via-background/60 to-background/30"></div>
         </div>
         <div className="absolute top-0 left-0 w-72 h-72 bg-primary/10 rounded-full blur-[100px]"></div>
