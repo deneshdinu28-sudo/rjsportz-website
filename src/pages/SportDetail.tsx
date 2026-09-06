@@ -6,7 +6,6 @@ import { Card, CardContent } from "@/components/ui/card";
 import { ArrowLeft, Star, CheckCircle, Users, Clock, Award, Dumbbell } from "lucide-react";
 import { motion } from "framer-motion";
 
-import { useEffect } from "react";
 import skatingImage from "@/assets/skating-focus.jpg";
 import chessImage from "@/assets/chess-board.jpg";
 import artsImage from "@/assets/arts-drawing.jpg";
@@ -209,10 +208,6 @@ const SportDetail = () => {
   const { slug } = useParams<{ slug: string }>();
   const navigate = useNavigate();
   const sport = sportsData[slug || ""];
-
-  useEffect(() => {
-    window.scrollTo(0, 0);
-  }, [slug]);
 
   if (!sport) {
     return (
