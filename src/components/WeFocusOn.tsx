@@ -2,6 +2,9 @@ import { Card, CardContent } from "@/components/ui/card";
 import { useScrollAnimation } from "@/hooks/useScrollAnimation";
 import { Link } from "react-router-dom";
 import skatingImage from "@/assets/skating-focus.jpg";
+import chessImage from "@/assets/chess-board.jpg";
+import artsImage from "@/assets/arts-drawing.jpg";
+import mmaKungFuImage from "@/assets/mma-kung-fu.jpg";
 
 const WeFocusOn = () => {
   const { ref, isVisible } = useScrollAnimation();
@@ -64,19 +67,19 @@ const WeFocusOn = () => {
     {
       title: "Chess",
       slug: "chess",
-      image: "https://images.unsplash.com/photo-1505461296292-7d67beed10a2?w=800",
+      image: chessImage,
       description: "Sharpen strategic thinking and focus through personalized chess coaching for all skill levels"
     },
     {
       title: "Arts",
       slug: "arts",
-      image: "https://images.unsplash.com/photo-1503454537195-1dcabb73ffb9?w=800",
+      image: artsImage,
       description: "Unlock creativity through guided drawing, painting, and craft sessions for every age"
     },
     {
       title: "MMA-Kung Fu",
       slug: "mma-kung-fu",
-      image: "https://images.unsplash.com/photo-1607031767898-5f319512ff1e?w=800",
+      image: mmaKungFuImage,
       description: "Build power, discipline, and real-world self-defense skills through dynamic MMA and traditional Kung Fu training"
     }
   ];
