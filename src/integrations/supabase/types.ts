@@ -67,6 +67,7 @@ export type Database = {
           id: string
           message: string | null
           phone: string
+          source: string | null
           sport_interest: string
         }
         Insert: {
@@ -76,6 +77,7 @@ export type Database = {
           id?: string
           message?: string | null
           phone: string
+          source?: string | null
           sport_interest: string
         }
         Update: {
@@ -85,6 +87,7 @@ export type Database = {
           id?: string
           message?: string | null
           phone?: string
+          source?: string | null
           sport_interest?: string
         }
         Relationships: []

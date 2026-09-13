@@ -12,6 +12,10 @@ dist
 dist-ssr
 *.local
 
+# Supabase CLI local link-state — no secrets, just which project this
+# machine's CLI is linked to; shouldn't be committed.
+supabase/.temp/
+
 # Editor directories and files
 .vscode/*
 !.vscode/extensions.json

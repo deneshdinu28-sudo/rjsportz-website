@@ -3,12 +3,14 @@ import { Button } from "@/components/ui/button";
 import { Link, useNavigate, useLocation } from "react-router-dom";
 import { Menu, X } from "lucide-react";
 import logo from "@/assets/logo.png";
+import { useBookingModal } from "@/contexts/BookingModalContext";
 
 const Navigation = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
   const navigate = useNavigate();
   const location = useLocation();
+  const { openModal } = useBookingModal();
 
   useEffect(() => {
     const handleScroll = () => setIsScrolled(window.scrollY > 50);
@@ -49,7 +51,7 @@ const Navigation = () => {
             <Link to="/feedbacks" onClick={() => setIsOpen(false)} className="text-foreground hover:text-primary transition-colors">Testimonials</Link>
             <Link to="/hiring" className="text-foreground hover:text-primary transition-colors">Hiring</Link>
             <button onClick={() => goToSection('contact')} className="text-foreground hover:text-primary transition-colors">Contact</button>
-            <Button onClick={() => goToSection('contact')} variant="default">Book Session</Button>
+            <Button onClick={() => openModal('Book Session')} variant="default">Book Session</Button>
           </div>
 
           <div className="md:hidden">
@@ -69,7 +71,7 @@ const Navigation = () => {
               <Link to="/hiring" onClick={() => setIsOpen(false)} className="block w-full text-left px-3 py-2 text-foreground hover:text-primary hover:bg-secondary rounded-md transition-colors">Hiring</Link>
               <button onClick={() => goToSection('contact')} className="block w-full text-left px-3 py-2 text-foreground hover:text-primary hover:bg-secondary rounded-md transition-colors">Contact</button>
               <div className="px-3 py-2">
-                <Button onClick={() => goToSection('contact')} variant="default" className="w-full">Book Session</Button>
+                <Button onClick={() => { setIsOpen(false); openModal('Book Session'); }} variant="default" className="w-full">Book Session</Button>
               </div>
             </div>
           </div>

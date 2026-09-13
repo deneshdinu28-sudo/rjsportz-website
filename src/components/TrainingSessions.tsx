@@ -2,13 +2,11 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { Button } from "@/components/ui/button";
 import { Users, Target, Trophy, Clock } from "lucide-react";
 import { useScrollAnimation } from "@/hooks/useScrollAnimation";
+import { useBookingModal } from "@/contexts/BookingModalContext";
 
 const TrainingSessions = () => {
   const { ref, isVisible } = useScrollAnimation();
-
-  const scrollToContact = () => {
-    document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' });
-  };
+  const { openModal } = useBookingModal();
 
   const sessions = [
     {
@@ -85,7 +83,7 @@ const TrainingSessions = () => {
                 </ul>
                 
                 <div className="pt-4 border-t border-border">
-                  <Button className="w-full" variant="outline" onClick={scrollToContact}>
+                  <Button className="w-full" variant="outline" onClick={() => openModal('Get Started')}>
                     Get Started
                   </Button>
                 </div>

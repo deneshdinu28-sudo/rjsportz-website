@@ -1,8 +1,10 @@
 import { Button } from "@/components/ui/button";
 import { motion } from "framer-motion";
 import heroCollage from "@/assets/hero-sports-collage.jpg";
+import { useBookingModal } from "@/contexts/BookingModalContext";
 
 const Hero = () => {
+  const { openModal } = useBookingModal();
   const scrollToSection = (id: string) => {
     document.getElementById(id)?.scrollIntoView({ behavior: 'smooth' });
   };
@@ -58,7 +60,7 @@ const Hero = () => {
               variant="hero" 
               size="lg"
               className="text-lg px-10 py-7 font-bold"
-              onClick={() => scrollToSection('contact')}
+              onClick={() => openModal('Start Training')}
             >
               Start Training
             </Button>

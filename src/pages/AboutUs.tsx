@@ -1,14 +1,15 @@
 import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { Link } from "react-router-dom";
 import { Target, Eye, Trophy } from "lucide-react";
 import Navigation from "@/components/Navigation";
 import SEO from "@/components/SEO";
+import { useBookingModal } from "@/contexts/BookingModalContext";
 
 import founderImage from "@/assets/ranjit-founder.jpeg";
 import coFounderImage from "@/assets/rohit-cofounder.jpeg";
 
 const AboutUs = () => {
+  const { openModal } = useBookingModal();
   const staff = [
     {
       name: "Ranjit Subramaniyam",
@@ -157,11 +158,9 @@ const AboutUs = () => {
                 Join over 1000 students who have transformed their lives through our personalized 
                 at-home training programs.
               </p>
-              <Link to="/#contact">
-                <Button size="lg" className="px-8">
-                  Get Started Today
-                </Button>
-              </Link>
+              <Button size="lg" className="px-8" onClick={() => openModal('Get Started')}>
+                Get Started Today
+              </Button>
             </div>
           </section>
 
