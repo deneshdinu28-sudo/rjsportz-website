@@ -1,4 +1,4 @@
-import { Phone, Mail, Clock, Facebook, Instagram, Youtube, Linkedin } from "lucide-react";
+import { Phone, Mail, Clock } from "lucide-react";
 import { Link } from "react-router-dom";
 import logo from "@/assets/logo.png";
 
@@ -20,6 +20,9 @@ const Footer = () => {
     { name: "Yoga", slug: "yoga" },
     { name: "Zumba", slug: "zumba" },
   ];
+  const servicesMid = Math.ceil(services.length / 2);
+  const servicesCol1 = services.slice(0, servicesMid);
+  const servicesCol2 = services.slice(servicesMid);
   const programs = ["Group Programs", "Personal Coaching", "Competition Prep", "Intensive Camps"];
 
   return (
@@ -31,24 +34,26 @@ const Footer = () => {
             <p className="text-muted-foreground mb-6">
               Professional multi-sport training delivered at your doorstep. Expert coaching across 15 sports and fitness disciplines, from badminton and karate to chess, dance, and gymnastics.
             </p>
-            <div className="flex gap-4">
-              {[Facebook, Instagram, Youtube, Linkedin].map((Icon, i) => (
-                <a key={i} href="#" className="w-10 h-10 bg-primary/10 rounded-full flex items-center justify-center hover:bg-primary hover:text-primary-foreground transition-all duration-300 hover:shadow-[0_0_15px_hsl(105_98%_51%/0.4)]">
-                  <Icon className="w-5 h-5" />
-                </a>
-              ))}
-            </div>
           </div>
 
           <div>
             <h4 className="text-lg font-semibold text-foreground mb-4">Our Services</h4>
-            <ul className="space-y-3">
-              {services.map((service, i) => (
-                <li key={i}>
-                  <Link to={`/sport/${service.slug}`} className="text-muted-foreground hover:text-primary transition-colors">{service.name}</Link>
-                </li>
-              ))}
-            </ul>
+            <div className="grid grid-cols-2 gap-x-4">
+              <ul className="space-y-3">
+                {servicesCol1.map((service, i) => (
+                  <li key={i}>
+                    <Link to={`/sport/${service.slug}`} className="text-muted-foreground hover:text-primary transition-colors">{service.name}</Link>
+                  </li>
+                ))}
+              </ul>
+              <ul className="space-y-3">
+                {servicesCol2.map((service, i) => (
+                  <li key={i}>
+                    <Link to={`/sport/${service.slug}`} className="text-muted-foreground hover:text-primary transition-colors">{service.name}</Link>
+                  </li>
+                ))}
+              </ul>
+            </div>
           </div>
 
           <div>

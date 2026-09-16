@@ -1,10 +1,10 @@
 import { Button } from "@/components/ui/button";
 import { motion } from "framer-motion";
+import { useNavigate } from "react-router-dom";
 import heroCollage from "@/assets/hero-sports-collage.jpg";
-import { useBookingModal } from "@/contexts/BookingModalContext";
 
 const Hero = () => {
-  const { openModal } = useBookingModal();
+  const navigate = useNavigate();
   const scrollToSection = (id: string) => {
     document.getElementById(id)?.scrollIntoView({ behavior: 'smooth' });
   };
@@ -15,7 +15,7 @@ const Hero = () => {
       <div className="absolute inset-0 z-0">
         <img 
           src={heroCollage} 
-          alt="Badminton, Yoga, Karate, Skating, Swimming, Table Tennis, Football, Basketball & Zumba" 
+          alt="Badminton, Yoga, Karate, Skating, Swimming, Table Tennis, Football, Basketball & Zumba"
           className="w-full h-full object-cover opacity-50"
         />
         <div className="absolute inset-0 bg-gradient-to-b from-background/90 via-background/60 to-background"></div>
@@ -60,7 +60,7 @@ const Hero = () => {
               variant="hero" 
               size="lg"
               className="text-lg px-10 py-7 font-bold"
-              onClick={() => openModal('Start Training')}
+              onClick={() => navigate(`/get-started?source=${encodeURIComponent('Start Training')}`)}
             >
               Start Training
             </Button>

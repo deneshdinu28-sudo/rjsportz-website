@@ -5,7 +5,6 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { ArrowLeft, Star, CheckCircle, Users, Clock, Award, Dumbbell } from "lucide-react";
 import { motion } from "framer-motion";
-import { useBookingModal } from "@/contexts/BookingModalContext";
 
 import skatingImage from "@/assets/skating-focus.jpg";
 import chessImage from "@/assets/chess-board.jpg";
@@ -254,7 +253,6 @@ const SportDetail = () => {
   const { slug } = useParams<{ slug: string }>();
   const navigate = useNavigate();
   const sport = sportsData[slug || ""];
-  const { openModal } = useBookingModal();
 
   if (!sport) {
     return (
@@ -398,7 +396,7 @@ const SportDetail = () => {
             <Clock className="w-10 h-10 text-primary mx-auto mb-4" />
             <h2 className="text-3xl font-black text-foreground mb-4">Ready to Start {sport.title}?</h2>
             <p className="text-muted-foreground mb-8">Book a free trial session and experience our expert coaching firsthand. Training at your doorstep, on your schedule.</p>
-            <Button className="bg-gradient-to-r from-primary to-accent px-10" size="lg" onClick={() => openModal('Free Trial')}>
+            <Button className="bg-gradient-to-r from-primary to-accent px-10" size="lg" onClick={() => navigate(`/get-started?source=${encodeURIComponent('Free Trial')}`)}>
               Book a Free Trial
             </Button>
           </div>

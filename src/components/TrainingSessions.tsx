@@ -1,12 +1,12 @@
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Users, Target, Trophy, Clock } from "lucide-react";
+import { useNavigate } from "react-router-dom";
 import { useScrollAnimation } from "@/hooks/useScrollAnimation";
-import { useBookingModal } from "@/contexts/BookingModalContext";
 
 const TrainingSessions = () => {
   const { ref, isVisible } = useScrollAnimation();
-  const { openModal } = useBookingModal();
+  const navigate = useNavigate();
 
   const sessions = [
     {
@@ -83,7 +83,7 @@ const TrainingSessions = () => {
                 </ul>
                 
                 <div className="pt-4 border-t border-border">
-                  <Button className="w-full" variant="outline" onClick={() => openModal('Get Started')}>
+                  <Button className="w-full" variant="outline" onClick={() => navigate(`/get-started?source=${encodeURIComponent('Get Started')}`)}>
                     Get Started
                   </Button>
                 </div>
