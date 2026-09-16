@@ -183,14 +183,20 @@ const Hiring = () => {
                         className="w-full h-10 px-3 py-2 border border-input rounded-md bg-background text-foreground text-sm focus:outline-none focus:ring-2 focus:ring-ring"
                       >
                         <option value="">Select a sport</option>
+                        <option>Arts</option>
                         <option>Badminton</option>
-                        <option>Yoga</option>
+                        <option>Basketball</option>
+                        <option>Chess</option>
+                        <option>Dance</option>
+                        <option>Football</option>
+                        <option>Gym</option>
+                        <option>Gymnastics</option>
                         <option>Karate</option>
+                        <option>MMA-Kung Fu</option>
                         <option>Skating</option>
                         <option>Swimming</option>
                         <option>Table Tennis</option>
-                        <option>Football</option>
-                        <option>Basketball</option>
+                        <option>Yoga</option>
                         <option>Zumba</option>
                       </select>
                     </div>

@@ -11,22 +11,64 @@ const WeFocusOn = () => {
 
   const activities = [
     {
+      title: "Arts",
+      slug: "arts",
+      image: artsImage,
+      description: "Unlock creativity through guided drawing, painting, and craft sessions for every age"
+    },
+    {
       title: "Badminton",
       slug: "badminton",
       image: "https://images.unsplash.com/photo-1626224583764-f87db24ac4ea?w=800",
       description: "Professional badminton coaching with expert techniques and strategies"
     },
     {
-      title: "Yoga",
-      slug: "yoga",
-      image: "https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?w=800",
-      description: "Enhance flexibility, balance, and mental wellness through yoga"
+      title: "Basketball",
+      slug: "basketball",
+      image: "https://images.unsplash.com/photo-1546519638-68e109498ffc?w=800",
+      description: "Develop shooting, dribbling, and court awareness with professional training"
+    },
+    {
+      title: "Chess",
+      slug: "chess",
+      image: chessImage,
+      description: "Sharpen strategic thinking and focus through personalized chess coaching for all skill levels"
+    },
+    {
+      title: "Dance",
+      slug: "dance",
+      image: "https://images.unsplash.com/photo-1541904845547-0eaf866de232?w=800",
+      description: "Build rhythm, confidence, and stage presence through energetic dance styles for every age"
+    },
+    {
+      title: "Football",
+      slug: "football",
+      image: "https://images.unsplash.com/photo-1553778263-73a83bab9b0c?w=800",
+      description: "Build teamwork, endurance, and ball control with expert football coaching"
+    },
+    {
+      title: "Gym",
+      slug: "gym",
+      image: "https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=800",
+      description: "Strength and conditioning training with personalized programs for every fitness goal"
+    },
+    {
+      title: "Gymnastics",
+      slug: "gymnastics",
+      image: "https://images.unsplash.com/photo-1742249739458-7f49d1cec452?w=800",
+      description: "Build strength, flexibility, and body control through structured gymnastics training"
     },
     {
       title: "Karate",
       slug: "karate",
       image: "https://images.unsplash.com/photo-1555597673-b21d5c935865?w=800",
       description: "Traditional martial arts training for discipline and self-defense"
+    },
+    {
+      title: "MMA-Kung Fu",
+      slug: "mma-kung-fu",
+      image: mmaKungFuImage,
+      description: "Build power, discipline, and real-world self-defense skills through dynamic MMA and traditional Kung Fu training"
     },
     {
       title: "Skating",
@@ -47,40 +89,16 @@ const WeFocusOn = () => {
       description: "Master the art of table tennis with professional guidance"
     },
     {
-      title: "Football",
-      slug: "football",
-      image: "https://images.unsplash.com/photo-1553778263-73a83bab9b0c?w=800",
-      description: "Build teamwork, endurance, and ball control with expert football coaching"
-    },
-    {
-      title: "Basketball",
-      slug: "basketball",
-      image: "https://images.unsplash.com/photo-1546519638-68e109498ffc?w=800",
-      description: "Develop shooting, dribbling, and court awareness with professional training"
+      title: "Yoga",
+      slug: "yoga",
+      image: "https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?w=800",
+      description: "Enhance flexibility, balance, and mental wellness through yoga"
     },
     {
       title: "Zumba",
       slug: "zumba",
       image: "https://images.unsplash.com/photo-1524594152303-9fd13543fe6e?w=800",
       description: "High-energy dance fitness combining Latin rhythms with cardio workouts"
-    },
-    {
-      title: "Chess",
-      slug: "chess",
-      image: chessImage,
-      description: "Sharpen strategic thinking and focus through personalized chess coaching for all skill levels"
-    },
-    {
-      title: "Arts",
-      slug: "arts",
-      image: artsImage,
-      description: "Unlock creativity through guided drawing, painting, and craft sessions for every age"
-    },
-    {
-      title: "MMA-Kung Fu",
-      slug: "mma-kung-fu",
-      image: mmaKungFuImage,
-      description: "Build power, discipline, and real-world self-defense skills through dynamic MMA and traditional Kung Fu training"
     }
   ];
 

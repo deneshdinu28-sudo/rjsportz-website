@@ -4,14 +4,20 @@ import logo from "@/assets/logo.png";
 
 const Footer = () => {
   const services = [
+    { name: "Arts", slug: "arts" },
     { name: "Badminton", slug: "badminton" },
-    { name: "Yoga", slug: "yoga" },
+    { name: "Basketball", slug: "basketball" },
+    { name: "Chess", slug: "chess" },
+    { name: "Dance", slug: "dance" },
+    { name: "Football", slug: "football" },
+    { name: "Gym", slug: "gym" },
+    { name: "Gymnastics", slug: "gymnastics" },
     { name: "Karate", slug: "karate" },
+    { name: "MMA-Kung Fu", slug: "mma-kung-fu" },
     { name: "Skating", slug: "skating" },
     { name: "Swimming", slug: "swimming" },
     { name: "Table Tennis", slug: "table-tennis" },
-    { name: "Football", slug: "football" },
-    { name: "Basketball", slug: "basketball" },
+    { name: "Yoga", slug: "yoga" },
     { name: "Zumba", slug: "zumba" },
   ];
   const programs = ["Group Programs", "Personal Coaching", "Competition Prep", "Intensive Camps"];
@@ -23,7 +29,7 @@ const Footer = () => {
           <div>
             <img src={logo} alt="RJ Sportz" className="h-14 object-contain mb-4" />
             <p className="text-muted-foreground mb-6">
-              Professional multi-sport training delivered at your doorstep. Expert coaching in badminton, yoga, karate, skating, swimming, table tennis, football, basketball, and zumba.
+              Professional multi-sport training delivered at your doorstep. Expert coaching across 15 sports and fitness disciplines, from badminton and karate to chess, dance, and gymnastics.
             </p>
             <div className="flex gap-4">
               {[Facebook, Instagram, Youtube, Linkedin].map((Icon, i) => (

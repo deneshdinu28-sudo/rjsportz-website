@@ -98,18 +98,21 @@ const Contact = () => {
                 <div>
                   <label className="block text-sm font-medium text-foreground mb-2">Sport Interest</label>
                   <select name="sportInterest" value={formData.sportInterest} onChange={handleChange} className="w-full px-3 py-2 border border-input rounded-md bg-background text-foreground focus:outline-none focus:ring-2 focus:ring-ring">
+                    <option>Arts</option>
                     <option>Badminton</option>
-                    <option>Yoga</option>
+                    <option>Basketball</option>
+                    <option>Chess</option>
+                    <option>Dance</option>
+                    <option>Football</option>
+                    <option>Gym</option>
+                    <option>Gymnastics</option>
                     <option>Karate</option>
+                    <option>MMA-Kung Fu</option>
                     <option>Skating</option>
                     <option>Swimming</option>
                     <option>Table Tennis</option>
-                    <option>Football</option>
-                    <option>Basketball</option>
+                    <option>Yoga</option>
                     <option>Zumba</option>
-                    <option>Chess</option>
-                    <option>Arts</option>
-                    <option>MMA-Kung Fu</option>
                   </select>
                 </div>
                 <div>

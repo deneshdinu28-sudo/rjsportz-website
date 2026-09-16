@@ -202,6 +202,51 @@ const sportsData: Record<string, {
       { level: "Advanced", description: "Sparring, advanced techniques, and competition prep" },
     ],
     equipment: ["Training uniform/gi (guidance provided)", "Hand wraps and gloves", "Mouth guard", "Shin guards (for sparring)"],
+  },
+  gym: {
+    title: "Gym",
+    tagline: "Build strength, power, and lasting fitness",
+    image: "https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=800",
+    description: "Our gym program delivers personalized strength and conditioning coaching, covering proper form, progressive overload, and goal-based programming for every fitness level.",
+    benefits: ["Increased strength and muscle tone", "Improved metabolic health", "Better posture and joint stability", "Structured, goal-based programming", "Injury-prevention focused technique"],
+    details: ["Personalized workout plans and progression tracking", "Free weights, machines, and functional training", "Form correction and injury-prevention coaching", "Strength, hypertrophy, and fat-loss programming", "Nutrition guidance to support training goals"],
+    ageGroups: ["Teens (14-17 years)", "Adults (18-45 years)", "Active seniors (45+ years)", "Beginner-friendly batches"],
+    trainingLevels: [
+      { level: "Beginner", description: "Movement fundamentals, form, and base conditioning" },
+      { level: "Intermediate", description: "Progressive overload, structured splits, and strength cycles" },
+      { level: "Advanced", description: "Performance programming, advanced lifts, and periodization" },
+    ],
+    equipment: ["Comfortable workout attire", "Training shoes", "Water bottle", "Gym towel"],
+  },
+  gymnastics: {
+    title: "Gymnastics",
+    tagline: "Strength, flexibility, and body control in motion",
+    image: "https://images.unsplash.com/photo-1742249739458-7f49d1cec452?w=800",
+    description: "Our gymnastics program builds strength, flexibility, balance, and coordination through structured floor and apparatus training, guided by experienced coaches for beginners through competitive athletes.",
+    benefits: ["Full-body strength and flexibility", "Improved balance and coordination", "Body awareness and control", "Discipline and goal-setting", "Foundation for other sports"],
+    details: ["Floor, balance beam, and apparatus fundamentals", "Flexibility, core, and conditioning drills", "Tumbling progressions and spotting technique", "Age-appropriate skill and safety progressions", "Pathway to competitive-level training"],
+    ageGroups: ["Tiny Tots (4-6 years)", "Kids (7-12 years)", "Teens (13-17 years)", "Competitive track available"],
+    trainingLevels: [
+      { level: "Beginner", description: "Basic tumbling, flexibility, and body positioning" },
+      { level: "Intermediate", description: "Apparatus skills, routines, and strength progressions" },
+      { level: "Advanced", description: "Complex skills, routine composition, and competition prep" },
+    ],
+    equipment: ["Leotard or fitted athletic wear", "Bare feet or gymnastics slippers", "Hair tied back", "Water bottle"],
+  },
+  dance: {
+    title: "Dance",
+    tagline: "Move with rhythm, expression, and confidence",
+    image: "https://images.unsplash.com/photo-1541904845547-0eaf866de232?w=800",
+    description: "Our dance program blends multiple styles to build rhythm, coordination, and stage confidence, with structured choreography and technique training for every age and experience level.",
+    benefits: ["Improved rhythm and coordination", "Cardiovascular fitness", "Creative self-expression", "Confidence and stage presence", "Flexibility and body awareness"],
+    details: ["Multiple dance styles including freestyle and choreography", "Technique, musicality, and timing drills", "Routine building and performance practice", "Recitals and showcase opportunities", "No prior experience required"],
+    ageGroups: ["Kids (5-10 years)", "Teens (11-17 years)", "Adults (18+ years)", "Family and group sessions available"],
+    trainingLevels: [
+      { level: "Beginner", description: "Basic steps, rhythm building, and coordination" },
+      { level: "Intermediate", description: "Choreography, styling, and technique refinement" },
+      { level: "Advanced", description: "Performance routines, musicality, and showcase prep" },
+    ],
+    equipment: ["Comfortable, flexible clothing", "Dance or athletic shoes", "Water bottle", "Hair tied back"],
   }
 };
 

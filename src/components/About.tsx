@@ -11,7 +11,7 @@ const About = () => {
   const achievements = [
     { icon: Clock, label: "Flexible Scheduling" },
     { icon: Users, label: "All Age Groups" },
-    { icon: Trophy, label: "9 Sports Disciplines" },
+    { icon: Trophy, label: "15 Sports Disciplines" },
     { icon: Award, label: "Certified Coaches" }
   ];
 
@@ -31,15 +31,15 @@ const About = () => {
           {/* Content */}
           <div>
             <h2 className="text-4xl md:text-5xl font-black mb-6 text-foreground">
-              About Your <span className="text-primary">Coach</span>
+              About RJ <span className="text-primary">Sportz</span>
             </h2>
-            
+
             <p className="text-lg text-muted-foreground mb-6 leading-relaxed">
               With years of dedicated experience in professional sports training, RJ Sportz has been committed to helping athletes of all levels reach their full potential across multiple disciplines.
             </p>
-            
+
             <p className="text-lg text-muted-foreground mb-6 leading-relaxed">
-              Our approach focuses on holistic development through badminton, yoga, karate, skating, swimming, table tennis, football, basketball, and zumba. We bring expert coaching directly to your doorstep, making professional training accessible and convenient for everyone.
+              Our approach focuses on holistic development across 15 sports and fitness disciplines, spanning athletics, martial arts, performing arts, and mindful movement. We bring expert coaching directly to your doorstep, making professional training accessible and convenient for everyone.
             </p>
             
             <Link to="/about">

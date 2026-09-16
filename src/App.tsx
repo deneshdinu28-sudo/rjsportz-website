@@ -10,6 +10,7 @@ import Feedbacks from "./pages/Feedbacks";
 import AboutUs from "./pages/AboutUs";
 import SportDetail from "./pages/SportDetail";
 import Hiring from "./pages/Hiring";
+import Admin from "./pages/Admin";
 import NotFound from "./pages/NotFound";
 import ScrollToTop from "./components/ScrollToTop";
 import BookingModal from "./components/BookingModal";
@@ -34,6 +35,7 @@ const App = () => (
               <Route path="/about" element={<AboutUs />} />
               <Route path="/sport/:slug" element={<SportDetail />} />
               <Route path="/hiring" element={<Hiring />} />
+              <Route path="/admin" element={<Admin />} />
               {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
               <Route path="*" element={<NotFound />} />
             </Routes>
