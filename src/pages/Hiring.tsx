@@ -53,6 +53,23 @@ const Hiring = () => {
     }
     setIsSubmitting(true);
     try {
+      let resumePath: string | null = null;
+      if (resumeFile) {
+        const ext = resumeFile.name.split(".").pop();
+        const path = `${crypto.randomUUID()}.${ext}`;
+        const { error: uploadError } = await supabase.storage.from("resumes").upload(path, resumeFile);
+        if (uploadError) {
+          console.error("Resume upload error:", uploadError);
+          toast({
+            title: "Resume upload failed",
+            description: "We couldn't attach your resume, but you can still submit the rest of your application. Please email your resume to rjsportzofficial1@gmail.com separately.",
+            variant: "destructive",
+          });
+        } else {
+          resumePath = path;
+        }
+      }
+
       const { error } = await supabase.from("coach_applications").insert({
         full_name: formData.fullName,
         email: formData.email,
@@ -63,6 +80,7 @@ const Hiring = () => {
         location: formData.location || null,
         availability: formData.availability || null,
         about: formData.about || null,
+        resume_url: resumePath,
       });
       if (error) throw error;
       setIsSubmitted(true);
@@ -171,7 +189,7 @@ const Hiring = () => {
                   <div className="grid md:grid-cols-2 gap-4">
                     <div>
                       <label className="block text-sm font-medium text-foreground mb-2">Phone Number *</label>
-                      <Input name="phone" type="tel" value={formData.phone} onChange={handleChange} placeholder="+91 98765 43210" required />
+                      <Input name="phone" type="tel" value={formData.phone} onChange={handleChange} placeholder="+91 63744 01518" required />
                     </div>
                     <div>
                       <label className="block text-sm font-medium text-foreground mb-2">Primary Sport *</label>

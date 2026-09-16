@@ -131,7 +131,7 @@ const GetStarted = () => {
                   </div>
                   <div>
                     <label className="block text-sm font-medium text-foreground mb-2">Phone Number *</label>
-                    <Input name="phone" type="tel" value={formData.phone} onChange={handleChange} placeholder="+91 88700 18565" required />
+                    <Input name="phone" type="tel" value={formData.phone} onChange={handleChange} placeholder="+91 63744 01518" required />
                   </div>
                   <div>
                     <label className="block text-sm font-medium text-foreground mb-2">Sport Interest</label>
