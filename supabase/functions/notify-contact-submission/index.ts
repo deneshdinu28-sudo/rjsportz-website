@@ -11,7 +11,32 @@ const RESEND_ENDPOINT = "https://api.resend.com/emails";
 const ALERT_FROM = "RJ Sportz Website <onboarding@resend.dev>";
 const ALERT_TO = "rjsportzofficial1@gmail.com";
 
+// Only the trg_notify_contact_submission trigger should ever reach this
+// function - it authenticates with the service_role JWT Supabase injects
+// into every edge function (the same key the trigger reads from Vault).
+// Without this check, anyone holding the public anon key could POST a
+// forged record here and trigger a real Resend send to the studio inbox.
+function isAuthorizedCaller(req: Request): boolean {
+  const serviceRoleKey = Deno.env.get("SUPABASE_SERVICE_ROLE_KEY");
+  if (!serviceRoleKey) return false;
+
+  const expected = `Bearer ${serviceRoleKey}`;
+  const actual = req.headers.get("Authorization") ?? "";
+  if (actual.length !== expected.length) return false;
+
+  let mismatch = 0;
+  for (let i = 0; i < expected.length; i++) {
+    mismatch |= expected.charCodeAt(i) ^ actual.charCodeAt(i);
+  }
+  return mismatch === 0;
+}
+
 Deno.serve(async (req: Request) => {
+  if (!isAuthorizedCaller(req)) {
+    console.warn("[notify-contact-submission] rejected call with invalid Authorization header");
+    return new Response(JSON.stringify({ ok: false, error: "unauthorized" }), { status: 401 });
+  }
+
   let record: Record<string, unknown> | undefined;
   try {
     const payload = await req.json();
