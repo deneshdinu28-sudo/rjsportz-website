@@ -64,6 +64,14 @@ Deno.serve(async (req: Request) => {
       return new Response(JSON.stringify({ ok: false, status: res.status }), { status: 200 });
     }
 
+    let resendId: string | undefined;
+    try {
+      resendId = JSON.parse(bodyText)?.id;
+    } catch {
+      // bodyText wasn't JSON - fall through and log the raw text instead
+    }
+    console.log(`[notify-contact-submission] email sent, Resend id: ${resendId ?? "unknown"} (raw: ${bodyText})`);
+
     return new Response(JSON.stringify({ ok: true }), { status: 200 });
   } catch (err) {
     console.error("[notify-contact-submission] error sending alert:", err);
