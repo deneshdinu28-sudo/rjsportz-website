@@ -87,9 +87,19 @@ const Footer = () => {
         </div>
 
           <div className="border-t border-border mt-12 pt-8 flex flex-col sm:flex-row items-center justify-between gap-4">
-          <p className="text-muted-foreground">
-            © {new Date().getFullYear()} RJ Sportz. All rights reserved.
-          </p>
+          <div className="flex flex-col sm:flex-row items-center gap-2 sm:gap-6">
+            <p className="text-muted-foreground">
+              © {new Date().getFullYear()} RJ Sportz. All rights reserved.
+            </p>
+            <div className="flex items-center gap-4">
+              <Link to="/privacy" className="text-muted-foreground hover:text-primary text-sm transition-colors">
+                Privacy Policy
+              </Link>
+              <Link to="/terms" className="text-muted-foreground hover:text-primary text-sm transition-colors">
+                Terms & Conditions
+              </Link>
+            </div>
+          </div>
           <Link to="/hiring" className="text-primary hover:text-primary/80 font-medium transition-colors">
             We're Hiring Coaches →
           </Link>

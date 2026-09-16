@@ -12,6 +12,8 @@ import SportDetail from "./pages/SportDetail";
 import Hiring from "./pages/Hiring";
 import Admin from "./pages/Admin";
 import GetStarted from "./pages/GetStarted";
+import Privacy from "./pages/Privacy";
+import Terms from "./pages/Terms";
 import NotFound from "./pages/NotFound";
 import ScrollToTop from "./components/ScrollToTop";
 
@@ -34,6 +36,8 @@ const App = () => (
             <Route path="/hiring" element={<Hiring />} />
             <Route path="/admin" element={<Admin />} />
             <Route path="/get-started" element={<GetStarted />} />
+            <Route path="/privacy" element={<Privacy />} />
+            <Route path="/terms" element={<Terms />} />
             {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
             <Route path="*" element={<NotFound />} />
           </Routes>
