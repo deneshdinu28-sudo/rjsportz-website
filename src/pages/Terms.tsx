@@ -31,7 +31,7 @@ const Terms = () => {
               <h2 className="text-2xl font-bold text-foreground mb-3">Using this site</h2>
               <p>
                 You're welcome to browse this site and use it to learn about our coaching programs, submit an
-                inquiry, or apply to join our coaching team. Please use the forms honestly — don't submit false
+                inquiry, or apply to join our coaching team. Please use the forms honestly. Don't submit false
                 information or use them to send spam, abusive content, or anything unlawful.
               </p>
             </section>

@@ -43,7 +43,7 @@ const Privacy = () => {
               </ul>
               <p className="mt-3">
                 We do not collect any information beyond what you actively type into these forms. We do not use
-                cookies, analytics, or tracking scripts of any kind on this site — nothing is collected about you
+                cookies, analytics, or tracking scripts of any kind on this site. Nothing is collected about you
                 just by browsing.
               </p>
             </section>
@@ -62,15 +62,15 @@ const Privacy = () => {
             <section>
               <h2 className="text-2xl font-bold text-foreground mb-3">Who else sees it</h2>
               <p>
-                We use a small number of trusted service providers to run this website and respond to you — they
+                We use a small number of trusted service providers to run this website and respond to you. They
                 process your data on our behalf and are not permitted to use it for their own purposes:
               </p>
               <ul className="list-disc pl-6 mt-3 space-y-2">
-                <li><strong className="text-foreground">Supabase</strong> — securely stores form submissions in our database</li>
-                <li><strong className="text-foreground">Resend</strong> — delivers the email notification that alerts us to a new inquiry</li>
+                <li><strong className="text-foreground">Database hosting:</strong> our database service provider securely stores form submissions</li>
+                <li><strong className="text-foreground">Email delivery:</strong> our email service provider delivers the notification that alerts us to a new inquiry</li>
               </ul>
               <p className="mt-3">
-                Your information is protected by access controls that restrict it to RJ Sportz staff only — it is
+                Your information is protected by access controls that restrict it to RJ Sportz staff only. It is
                 never publicly readable, listable, or searchable on this site or elsewhere.
               </p>
             </section>
@@ -104,7 +104,7 @@ const Privacy = () => {
               <p>
                 Some of our coaching programs are for children. If you're a parent or guardian inquiring on behalf
                 of a child, the form asks for <strong className="text-foreground">your own</strong> contact
-                details, not your child's — we don't knowingly collect personal information directly from children
+                details, not your child's. We don't knowingly collect personal information directly from children
                 through this website.
               </p>
             </section>
